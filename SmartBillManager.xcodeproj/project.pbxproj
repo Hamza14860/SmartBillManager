@@ -60,14 +60,30 @@
 			children = (
 				BABDA258244ED7B4002BC251 /* AppDelegate.swift */,
 				BABDA25A244ED7B4002BC251 /* SceneDelegate.swift */,
-				BABDA25C244ED7B4002BC251 /* ViewController.swift */,
-				BABDA25E244ED7B4002BC251 /* Main.storyboard */,
+				BABDA270244ED810002BC251 /* Controller */,
+				BABDA26F244ED807002BC251 /* Views */,
 				BABDA264244ED7B8002BC251 /* Assets.xcassets */,
 				BABDA266244ED7B8002BC251 /* LaunchScreen.storyboard */,
 				BABDA269244ED7B8002BC251 /* Info.plist */,
 				BABDA261244ED7B4002BC251 /* SmartBillManager.xcdatamodeld */,
 			);
 			path = SmartBillManager;
+			sourceTree = "<group>";
+		};
+		BABDA26F244ED807002BC251 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BABDA25E244ED7B4002BC251 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BABDA270244ED810002BC251 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BABDA25C244ED7B4002BC251 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
