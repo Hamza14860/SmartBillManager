@@ -9,23 +9,31 @@
 /* Begin PBXBuildFile section */
 		BABDA259244ED7B4002BC251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA258244ED7B4002BC251 /* AppDelegate.swift */; };
 		BABDA25B244ED7B4002BC251 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA25A244ED7B4002BC251 /* SceneDelegate.swift */; };
-		BABDA25D244ED7B4002BC251 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA25C244ED7B4002BC251 /* ViewController.swift */; };
+		BABDA25D244ED7B4002BC251 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA25C244ED7B4002BC251 /* SplashScreenViewController.swift */; };
 		BABDA260244ED7B4002BC251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABDA25E244ED7B4002BC251 /* Main.storyboard */; };
 		BABDA263244ED7B4002BC251 /* SmartBillManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BABDA261244ED7B4002BC251 /* SmartBillManager.xcdatamodeld */; };
 		BABDA265244ED7B8002BC251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABDA264244ED7B8002BC251 /* Assets.xcassets */; };
 		BABDA268244ED7B8002BC251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABDA266244ED7B8002BC251 /* LaunchScreen.storyboard */; };
+		BABDA2722450018C002BC251 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA2712450018C002BC251 /* LoginViewController.swift */; };
+		BABDA274245001A0002BC251 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA273245001A0002BC251 /* RegisterViewController.swift */; };
+		BABDA276245001B8002BC251 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA275245001B8002BC251 /* HomeViewController.swift */; };
+		BABDA2782450024F002BC251 /* ForgetPassScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA2772450024F002BC251 /* ForgetPassScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BABDA255244ED7B4002BC251 /* SmartBillManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBillManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABDA258244ED7B4002BC251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABDA25A244ED7B4002BC251 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BABDA25C244ED7B4002BC251 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BABDA25C244ED7B4002BC251 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		BABDA25F244ED7B4002BC251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BABDA262244ED7B4002BC251 /* SmartBillManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartBillManager.xcdatamodel; sourceTree = "<group>"; };
 		BABDA264244ED7B8002BC251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BABDA267244ED7B8002BC251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BABDA269244ED7B8002BC251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BABDA2712450018C002BC251 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BABDA273245001A0002BC251 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		BABDA275245001B8002BC251 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BABDA2772450024F002BC251 /* ForgetPassScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +89,11 @@
 		BABDA270244ED810002BC251 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BABDA25C244ED7B4002BC251 /* ViewController.swift */,
+				BABDA25C244ED7B4002BC251 /* SplashScreenViewController.swift */,
+				BABDA2712450018C002BC251 /* LoginViewController.swift */,
+				BABDA273245001A0002BC251 /* RegisterViewController.swift */,
+				BABDA275245001B8002BC251 /* HomeViewController.swift */,
+				BABDA2772450024F002BC251 /* ForgetPassScreenViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,9 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BABDA25D244ED7B4002BC251 /* ViewController.swift in Sources */,
+				BABDA25D244ED7B4002BC251 /* SplashScreenViewController.swift in Sources */,
 				BABDA259244ED7B4002BC251 /* AppDelegate.swift in Sources */,
 				BABDA263244ED7B4002BC251 /* SmartBillManager.xcdatamodeld in Sources */,
+				BABDA274245001A0002BC251 /* RegisterViewController.swift in Sources */,
+				BABDA2782450024F002BC251 /* ForgetPassScreenViewController.swift in Sources */,
+				BABDA2722450018C002BC251 /* LoginViewController.swift in Sources */,
+				BABDA276245001B8002BC251 /* HomeViewController.swift in Sources */,
 				BABDA25B244ED7B4002BC251 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
