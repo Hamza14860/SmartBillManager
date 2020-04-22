@@ -253,7 +253,7 @@
         <!--About-->
         <scene sceneID="spQ-jc-z4w">
             <objects>
-                <viewController id="aeS-4v-2yC" sceneMemberID="viewController">
+                <viewController id="aeS-4v-2yC" customClass="AboutViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pVm-rH-XIA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -269,7 +269,7 @@
         <!--Expenses-->
         <scene sceneID="AxZ-hw-WTR">
             <objects>
-                <viewController id="SBJ-GJ-bfV" sceneMemberID="viewController">
+                <viewController id="SBJ-GJ-bfV" customClass="ExpenseViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PJ2-In-vqG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
