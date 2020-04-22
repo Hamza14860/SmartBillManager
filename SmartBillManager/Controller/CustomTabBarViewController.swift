@@ -10,14 +10,20 @@ import UIKit
 
 class CustomTabBarViewController: UITabBarController {
 
-    //var tabBarItem = UITabBarItem()
+    var tabBarItm = UITabBarItem()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.systemBlue], for: .selected)
          UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.darkGray], for: .normal)
+        
+        self.selectedIndex = 0
+        
+
     }
+    
+   
     
 
     /*

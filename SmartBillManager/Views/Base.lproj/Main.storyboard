@@ -250,23 +250,23 @@
             </objects>
             <point key="canvasLocation" x="2348" y="-198"/>
         </scene>
-        <!--Item-->
+        <!--About-->
         <scene sceneID="spQ-jc-z4w">
             <objects>
-                <viewController id="aeS-4v-2yC" customClass="HomeViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aeS-4v-2yC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pVm-rH-XIA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="viu-gL-arz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="XSa-q7-doa"/>
+                    <tabBarItem key="tabBarItem" title="About" image="info.circle.fill" catalog="system" id="XSa-q7-doa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Acx-Kl-fyH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1854" y="2016"/>
         </scene>
-        <!--Item 2-->
+        <!--Expenses-->
         <scene sceneID="AxZ-hw-WTR">
             <objects>
                 <viewController id="SBJ-GJ-bfV" sceneMemberID="viewController">
@@ -276,23 +276,23 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="uSw-vX-oHa"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="reN-D6-deC"/>
+                    <tabBarItem key="tabBarItem" title="Expenses" image="dollarsign.circle.fill" catalog="system" id="reN-D6-deC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Hk-7Y-Fb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1854" y="1165"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="zNg-Vk-rPn">
             <objects>
-                <viewController id="7MI-6B-reJ" sceneMemberID="viewController">
+                <viewController id="7MI-6B-reJ" customClass="HomeViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mVy-4N-TpA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="tX6-yt-ESK"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="WH0-ZE-71c"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="WH0-ZE-71c"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OcF-dz-yr0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -306,7 +306,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vDS-mK-2rP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="7MI-6B-reJ" kind="relationship" relationship="viewControllers" id="qH9-ZK-pOn"/>
@@ -340,6 +340,9 @@
     </scenes>
     <resources>
         <image name="bi4" width="800" height="600"/>
+        <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="textfield" width="298" height="93"/>
         <namedColor name="BrandBlue">
             <color red="0.16500000655651093" green="0.77999997138977051" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
