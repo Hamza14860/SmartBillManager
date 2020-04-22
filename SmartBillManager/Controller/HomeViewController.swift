@@ -10,10 +10,19 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    var billCategories: [UIImage?] = [UIImage(named: "ptcl"),UIImage(named: "suigas"),UIImage(named: "iesco")]
+    
+    @IBOutlet weak var billCatCollectionView: UICollectionView! {
+        didSet {
+            billCatCollectionView.dataSource = self
+            billCatCollectionView.delegate = self
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        super.tabBarController?.title = "HOME"
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,14 +34,23 @@ class HomeViewController: UIViewController {
            super.viewWillDisappear(animated)
        }
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+
+//MARK:- Collection View Methods
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return billCategories.count
     }
-    */
-
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "billCatCell", for: indexPath)
+        if let billCatCell = cell as? BillCatCollectionViewCell {
+            billCatCell.billCatImage.image = billCategories[indexPath.item]
+        }
+        return cell
+    }
+    
+    
 }
