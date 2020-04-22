@@ -8,22 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
-        <scene sceneID="GKd-Lb-pMP">
-            <objects>
-                <viewController id="faM-R6-XoN" customClass="HomeViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kIL-wU-GBV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="5vZ-1Q-0I2"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="t0s-Gp-69d"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9jh-ZD-vDH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="835" y="788"/>
-        </scene>
         <!--Register View Controller-->
         <scene sceneID="Ciu-EG-Clw">
             <objects>
@@ -108,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8m-ae-Iio" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1853.6231884057972" y="-527.00892857142856"/>
+            <point key="canvasLocation" x="1601" y="-599"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Jpl-LZ-0jT">
@@ -173,7 +157,7 @@
                                             <color key="titleColor" name="BrandLightBlue"/>
                                         </state>
                                         <connections>
-                                            <segue destination="faM-R6-XoN" kind="show" id="T3N-r4-6ML"/>
+                                            <segue destination="KTf-8B-JqI" kind="show" id="jiq-oZ-dXa"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -195,7 +179,7 @@
                                             <color key="titleColor" name="BrandBlue"/>
                                         </state>
                                         <connections>
-                                            <segue destination="6LB-4c-vRn" kind="show" id="tfj-s5-c70"/>
+                                            <segue destination="6LB-4c-vRn" kind="show" id="7s0-3q-VTa"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -264,7 +248,75 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NNl-dx-fT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1853.6231884057972" y="217.63392857142856"/>
+            <point key="canvasLocation" x="2348" y="-198"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="spQ-jc-z4w">
+            <objects>
+                <viewController id="aeS-4v-2yC" customClass="HomeViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pVm-rH-XIA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="viu-gL-arz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="XSa-q7-doa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Acx-Kl-fyH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1854" y="2016"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="AxZ-hw-WTR">
+            <objects>
+                <viewController id="SBJ-GJ-bfV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PJ2-In-vqG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="uSw-vX-oHa"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="reN-D6-deC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Hk-7Y-Fb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1854" y="1165"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="zNg-Vk-rPn">
+            <objects>
+                <viewController id="7MI-6B-reJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mVy-4N-TpA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="tX6-yt-ESK"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="WH0-ZE-71c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OcF-dz-yr0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1854" y="500"/>
+        </scene>
+        <!--Custom Tab Bar View Controller-->
+        <scene sceneID="6PI-4i-10t">
+            <objects>
+                <tabBarController id="KTf-8B-JqI" customClass="CustomTabBarViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PTy-n6-mBN"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vDS-mK-2rP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7MI-6B-reJ" kind="relationship" relationship="viewControllers" id="qH9-ZK-pOn"/>
+                        <segue destination="SBJ-GJ-bfV" kind="relationship" relationship="viewControllers" id="2UR-Kn-u3Q"/>
+                        <segue destination="aeS-4v-2yC" kind="relationship" relationship="viewControllers" id="Ffk-8T-nrx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3xb-6v-Onm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="835" y="856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="n61-qD-M4L">

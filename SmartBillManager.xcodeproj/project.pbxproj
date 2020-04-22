@@ -15,8 +15,9 @@
 		BABDA268244ED7B8002BC251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABDA266244ED7B8002BC251 /* LaunchScreen.storyboard */; };
 		BABDA2722450018C002BC251 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA2712450018C002BC251 /* LoginViewController.swift */; };
 		BABDA274245001A0002BC251 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA273245001A0002BC251 /* RegisterViewController.swift */; };
-		BABDA276245001B8002BC251 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA275245001B8002BC251 /* HomeViewController.swift */; };
 		BABDA2782450024F002BC251 /* ForgetPassScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA2772450024F002BC251 /* ForgetPassScreenViewController.swift */; };
+		BABDA27A24503ED8002BC251 /* CustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA27924503ED8002BC251 /* CustomTabBarViewController.swift */; };
+		BABDA27C24503F5E002BC251 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA27B24503F5E002BC251 /* HomeViewController.swift */; };
 		C31C1FE92953F355551EA6F9 /* Pods_SmartBillManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9680067DFB15034A250E11A /* Pods_SmartBillManager.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +34,9 @@
 		BABDA269244ED7B8002BC251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BABDA2712450018C002BC251 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BABDA273245001A0002BC251 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		BABDA275245001B8002BC251 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BABDA2772450024F002BC251 /* ForgetPassScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassScreenViewController.swift; sourceTree = "<group>"; };
+		BABDA27924503ED8002BC251 /* CustomTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarViewController.swift; sourceTree = "<group>"; };
+		BABDA27B24503F5E002BC251 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BDB886932BC6D6C269CAB165 /* Pods-SmartBillManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBillManager.release.xcconfig"; path = "Target Support Files/Pods-SmartBillManager/Pods-SmartBillManager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,8 +115,9 @@
 			children = (
 				BABDA2712450018C002BC251 /* LoginViewController.swift */,
 				BABDA273245001A0002BC251 /* RegisterViewController.swift */,
-				BABDA275245001B8002BC251 /* HomeViewController.swift */,
 				BABDA2772450024F002BC251 /* ForgetPassScreenViewController.swift */,
+				BABDA27924503ED8002BC251 /* CustomTabBarViewController.swift */,
+				BABDA27B24503F5E002BC251 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -237,9 +240,10 @@
 				BABDA259244ED7B4002BC251 /* AppDelegate.swift in Sources */,
 				BABDA263244ED7B4002BC251 /* SmartBillManager.xcdatamodeld in Sources */,
 				BABDA274245001A0002BC251 /* RegisterViewController.swift in Sources */,
+				BABDA27C24503F5E002BC251 /* HomeViewController.swift in Sources */,
 				BABDA2782450024F002BC251 /* ForgetPassScreenViewController.swift in Sources */,
+				BABDA27A24503ED8002BC251 /* CustomTabBarViewController.swift in Sources */,
 				BABDA2722450018C002BC251 /* LoginViewController.swift in Sources */,
-				BABDA276245001B8002BC251 /* HomeViewController.swift in Sources */,
 				BABDA25B244ED7B4002BC251 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
