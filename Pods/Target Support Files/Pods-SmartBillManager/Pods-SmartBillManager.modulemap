@@ -1,0 +1,6 @@
+framework module Pods_SmartBillManager {
+  umbrella header "Pods-SmartBillManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
