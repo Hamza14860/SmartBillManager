@@ -3,30 +3,11 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Splash Screen View Controller-->
-        <scene sceneID="Hb9-0I-Q1o">
-            <objects>
-                <viewController id="8jh-t2-fZD" customClass="SplashScreenViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tV8-cj-Tfv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="zFZ-RO-SvI"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="3MP-Ut-hAX"/>
-                    <connections>
-                        <segue destination="WPb-a8-0ud" kind="show" identifier="splashToLogin" id="7wi-vd-lNU"/>
-                        <segue destination="faM-R6-XoN" kind="show" identifier="splashToHome" id="PE2-YI-dK3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MEO-b7-wna" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="695.6521739130435" y="48.883928571428569"/>
-        </scene>
         <!--Home View Controller-->
         <scene sceneID="GKd-Lb-pMP">
             <objects>
@@ -41,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9jh-ZD-vDH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749" y="777"/>
+            <point key="canvasLocation" x="835" y="788"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="Ciu-EG-Clw">
@@ -64,7 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8m-ae-Iio" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2793" y="-698"/>
+            <point key="canvasLocation" x="1854" y="-527"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Jpl-LZ-0jT">
@@ -98,15 +79,33 @@
                                     <segue destination="AaO-k4-CLg" kind="show" id="Oky-fi-y66"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill Man" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQ6-70-V5w">
+                                <rect key="frame" x="111" y="257" width="185.5" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="53"/>
+                                <color key="textColor" name="BrandBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan.Store.Manage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfX-0E-rgS">
+                                <rect key="frame" x="129" y="316" width="157" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" name="BrandBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="J4a-4p-ttc"/>
                     </view>
                     <navigationItem key="navigationItem" id="PvO-9x-UeI"/>
+                    <connections>
+                        <outlet property="subTitleLbl" destination="ZfX-0E-rgS" id="1bI-4a-GDb"/>
+                        <outlet property="titleLbl" destination="iQ6-70-V5w" id="Jrd-5K-isN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ivQ-2M-27M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1711.5942028985507" y="-267.1875"/>
+            <point key="canvasLocation" x="835" y="49"/>
         </scene>
         <!--Forget Pass Screen View Controller-->
         <scene sceneID="ywe-sy-iHd">
@@ -122,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NNl-dx-fT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2793" y="33"/>
+            <point key="canvasLocation" x="1854" y="218"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="n61-qD-M4L">
@@ -132,10 +131,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UTm-Bk-bt9">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="BrandLightBlue"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="8jh-t2-fZD" kind="relationship" relationship="rootViewController" id="A7N-ec-CqQ"/>
+                        <segue destination="WPb-a8-0ud" kind="relationship" relationship="rootViewController" id="3Ia-1p-z38"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F5p-hO-3ag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -143,7 +143,12 @@
             <point key="canvasLocation" x="-214.49275362318843" y="48.883928571428569"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="T3N-r4-6ML"/>
-    </inferredMetricsTieBreakers>
+    <resources>
+        <namedColor name="BrandBlue">
+            <color red="0.16500000655651093" green="0.77999997138977051" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrandLightBlue">
+            <color red="0.92199999094009399" green="0.98000001907348633" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BABDA259244ED7B4002BC251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA258244ED7B4002BC251 /* AppDelegate.swift */; };
 		BABDA25B244ED7B4002BC251 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA25A244ED7B4002BC251 /* SceneDelegate.swift */; };
-		BABDA25D244ED7B4002BC251 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA25C244ED7B4002BC251 /* SplashScreenViewController.swift */; };
 		BABDA260244ED7B4002BC251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABDA25E244ED7B4002BC251 /* Main.storyboard */; };
 		BABDA263244ED7B4002BC251 /* SmartBillManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BABDA261244ED7B4002BC251 /* SmartBillManager.xcdatamodeld */; };
 		BABDA265244ED7B8002BC251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABDA264244ED7B8002BC251 /* Assets.xcassets */; };
@@ -27,7 +26,6 @@
 		BABDA255244ED7B4002BC251 /* SmartBillManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBillManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABDA258244ED7B4002BC251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABDA25A244ED7B4002BC251 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BABDA25C244ED7B4002BC251 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		BABDA25F244ED7B4002BC251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BABDA262244ED7B4002BC251 /* SmartBillManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartBillManager.xcdatamodel; sourceTree = "<group>"; };
 		BABDA264244ED7B8002BC251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,7 +56,6 @@
 				32E7B2CDAFC18BAB4D9481CD /* Pods-SmartBillManager.debug.xcconfig */,
 				BDB886932BC6D6C269CAB165 /* Pods-SmartBillManager.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,7 +111,6 @@
 		BABDA270244ED810002BC251 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BABDA25C244ED7B4002BC251 /* SplashScreenViewController.swift */,
 				BABDA2712450018C002BC251 /* LoginViewController.swift */,
 				BABDA273245001A0002BC251 /* RegisterViewController.swift */,
 				BABDA275245001B8002BC251 /* HomeViewController.swift */,
@@ -238,7 +234,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BABDA25D244ED7B4002BC251 /* SplashScreenViewController.swift in Sources */,
 				BABDA259244ED7B4002BC251 /* AppDelegate.swift in Sources */,
 				BABDA263244ED7B4002BC251 /* SmartBillManager.xcdatamodeld in Sources */,
 				BABDA274245001A0002BC251 /* RegisterViewController.swift in Sources */,
