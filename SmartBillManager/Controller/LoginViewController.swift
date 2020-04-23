@@ -53,7 +53,7 @@ class LoginViewController: UIViewController {
                     self.errorLoginLbl.text  = e.localizedDescription
                 } else {
                     //Navigate to Home View controller
-                    self.performSegue(withIdentifier: "loginToHome", sender: self)
+                    self.performSegue(withIdentifier: Constants.loginSegue, sender: self)
                 }
               
             }
