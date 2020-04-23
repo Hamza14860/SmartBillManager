@@ -10,7 +10,9 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    var billCategories: [UIImage?] = [UIImage(named: "ptcl"),UIImage(named: "suigas"),UIImage(named: "iesco2")]
+    var billCategories: [String:UIImage?] = ["PTCL":UIImage(named: "ptcl"),
+                                             "SUIGAS":UIImage(named: "suigas"),
+                                             "ISECO":UIImage(named: "iesco2")]
     
     @IBOutlet weak var billCatCollectionView: UICollectionView! {
         didSet {
@@ -47,7 +49,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "billCatCell", for: indexPath)
         if let billCatCell = cell as? BillCatCollectionViewCell {
-            billCatCell.billCatImage.image = billCategories[indexPath.item]
+            //billCatCell.billCatImage.image = billCategories[indexPath.item]
+            billCatCell.billCatImage.image = Array(billCategories)[indexPath.item].value
         }
         return cell
     }
