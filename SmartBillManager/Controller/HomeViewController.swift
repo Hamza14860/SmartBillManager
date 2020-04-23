@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    var billCategories: [UIImage?] = [UIImage(named: "ptcl"),UIImage(named: "suigas"),UIImage(named: "iesco")]
+    var billCategories: [UIImage?] = [UIImage(named: "ptcl"),UIImage(named: "suigas"),UIImage(named: "iesco2")]
     
     @IBOutlet weak var billCatCollectionView: UICollectionView! {
         didSet {
