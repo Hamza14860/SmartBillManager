@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>256701402092-hs35fkbi1vsld6s7q8br6qk08arrt63s.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.256701402092-hs35fkbi1vsld6s7q8br6qk08arrt63s</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>256701402092-k3a3ncm6gip5u18nnpfohg41q7rejnd5.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA7w62LwNP6GwUp8ptspx27CcjMO2iguNc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>256701402092</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.nuces.fast.ios.billman.SmartBillManager</string>
+	<key>PROJECT_ID</key>
+	<string>billman-f3cd1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>billman-f3cd1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:256701402092:ios:318f8e766959b72d510ec9</string>
+	<key>DATABASE_URL</key>
+	<string>https://billman-f3cd1.firebaseio.com</string>
+</dict>
+</plist>

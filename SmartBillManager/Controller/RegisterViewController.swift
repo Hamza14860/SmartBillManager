@@ -10,10 +10,17 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var tfName: UITextField!
+    @IBOutlet weak var tfEmail: UITextField!
+    
+    @IBOutlet weak var tfRePassword: UITextField!
+    @IBOutlet weak var tfPassword: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    @IBAction func registerAccount(_ sender: UIButton) {
     }
     
 

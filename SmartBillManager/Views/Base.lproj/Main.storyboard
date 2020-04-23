@@ -76,6 +76,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" name="BrandLightBlue"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerAccount:" destination="6LB-4c-vRn" eventType="touchUpInside" id="BIL-I6-2Q7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5U-At-QG4">
                                 <rect key="frame" x="20" y="143" width="374" height="58"/>
@@ -90,6 +93,12 @@
                         <viewLayoutGuide key="safeArea" id="P2J-B1-kYX"/>
                     </view>
                     <navigationItem key="navigationItem" id="Oyy-SA-kqp"/>
+                    <connections>
+                        <outlet property="tfEmail" destination="xS5-Sr-o2r" id="9E1-An-pLA"/>
+                        <outlet property="tfName" destination="ZZx-Qx-RDe" id="3kd-8S-dDW"/>
+                        <outlet property="tfPassword" destination="ig9-tV-Czn" id="4jf-L2-sdl"/>
+                        <outlet property="tfRePassword" destination="dc2-yN-cIP" id="D60-WN-X5H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8m-ae-Iio" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,7 +167,7 @@
                                             <color key="titleColor" name="BrandLightBlue"/>
                                         </state>
                                         <connections>
-                                            <segue destination="KTf-8B-JqI" kind="show" id="jiq-oZ-dXa"/>
+                                            <action selector="loginAccount:" destination="WPb-a8-0ud" eventType="touchUpInside" id="fMx-7i-7Ha"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -197,14 +206,25 @@
                                     <segue destination="AaO-k4-CLg" kind="show" id="Oky-fi-y66"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEz-cV-7PF">
+                                <rect key="frame" x="20" y="723" width="374" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="J4a-4p-ttc"/>
                     </view>
                     <navigationItem key="navigationItem" id="PvO-9x-UeI"/>
                     <connections>
+                        <outlet property="errorLoginLbl" destination="LEz-cV-7PF" id="ttA-w3-dku"/>
                         <outlet property="subTitleLbl" destination="ZfX-0E-rgS" id="1bI-4a-GDb"/>
+                        <outlet property="tfEmail" destination="Qm0-Ic-G5v" id="pey-HJ-aoq"/>
+                        <outlet property="tfPassword" destination="2ag-cl-8b7" id="q65-Ar-Vt9"/>
                         <outlet property="titleLbl" destination="iQ6-70-V5w" id="Jrd-5K-isN"/>
+                        <segue destination="KTf-8B-JqI" kind="show" identifier="loginToHome" id="EXN-OU-Kra"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ivQ-2M-27M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -293,7 +313,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Expense Management" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgj-ST-4ng">
-                                <rect key="frame" x="20" y="582" width="228" height="28"/>
+                                <rect key="frame" x="20" y="582" width="345" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
                                 <nil key="textColor"/>
@@ -322,7 +342,7 @@
                                 <state key="normal" image="btextscan"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill Text Scanner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mx9-tC-6ez">
-                                <rect key="frame" x="20" y="326" width="169" height="28"/>
+                                <rect key="frame" x="20" y="326" width="346" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
                                 <nil key="textColor"/>
@@ -366,7 +386,7 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bill Management" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hp-if-nop">
-                                <rect key="frame" x="20" y="112" width="171" height="28"/>
+                                <rect key="frame" x="20" y="112" width="345" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
                                 <nil key="textColor"/>

@@ -21,6 +21,7 @@
 		BABDA27E24505EE0002BC251 /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA27D24505EE0002BC251 /* ExpenseViewController.swift */; };
 		BABDA28024505EEF002BC251 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA27F24505EEF002BC251 /* AboutViewController.swift */; };
 		BABDA282245068E5002BC251 /* BillCatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA281245068E5002BC251 /* BillCatCollectionViewCell.swift */; };
+		BABDA284245198DA002BC251 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BABDA283245198DA002BC251 /* GoogleService-Info.plist */; };
 		C31C1FE92953F355551EA6F9 /* Pods_SmartBillManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9680067DFB15034A250E11A /* Pods_SmartBillManager.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		BABDA27D24505EE0002BC251 /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
 		BABDA27F24505EEF002BC251 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		BABDA281245068E5002BC251 /* BillCatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCatCollectionViewCell.swift; sourceTree = "<group>"; };
+		BABDA283245198DA002BC251 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BDB886932BC6D6C269CAB165 /* Pods-SmartBillManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBillManager.release.xcconfig"; path = "Target Support Files/Pods-SmartBillManager/Pods-SmartBillManager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 				BABDA266244ED7B8002BC251 /* LaunchScreen.storyboard */,
 				BABDA269244ED7B8002BC251 /* Info.plist */,
 				BABDA261244ED7B4002BC251 /* SmartBillManager.xcdatamodeld */,
+				BABDA283245198DA002BC251 /* GoogleService-Info.plist */,
 			);
 			path = SmartBillManager;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BABDA268244ED7B8002BC251 /* LaunchScreen.storyboard in Resources */,
+				BABDA284245198DA002BC251 /* GoogleService-Info.plist in Resources */,
 				BABDA265244ED7B8002BC251 /* Assets.xcassets in Resources */,
 				BABDA260244ED7B4002BC251 /* Main.storyboard in Resources */,
 			);

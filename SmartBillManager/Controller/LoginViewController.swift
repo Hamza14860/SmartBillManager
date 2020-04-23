@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var subTitleLbl: UILabel!
     
+    @IBOutlet weak var tfEmail: UITextField!
+    @IBOutlet weak var tfPassword: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +33,7 @@ class LoginViewController: UIViewController {
 
     }
     
+    @IBOutlet weak var errorLoginLbl: UILabel!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -40,16 +44,23 @@ class LoginViewController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.isNavigationBarHidden = false //unhide nav bar
     }
+    @IBAction func loginAccount(_ sender: UIButton) {
+        if let email = tfEmail.text, let password = tfPassword.text {
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                if let e = error {
+                    print(e.localizedDescription)
+                    self.errorLoginLbl.alpha = 1.0
+                    self.errorLoginLbl.text  = e.localizedDescription
+                } else {
+                    //Navigate to Home View controller
+                    self.performSegue(withIdentifier: "loginToHome", sender: self)
+                }
+              
+            }
+        }
+        
+    }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
