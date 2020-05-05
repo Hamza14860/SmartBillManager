@@ -88,21 +88,30 @@
                                 <color key="textColor" name="BrandBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ce-rb-ol1">
+                                <rect key="frame" x="31" y="645" width="363" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="P2J-B1-kYX"/>
                     </view>
                     <navigationItem key="navigationItem" id="Oyy-SA-kqp"/>
                     <connections>
+                        <outlet property="errorLbl" destination="4ce-rb-ol1" id="UZl-h0-yhy"/>
                         <outlet property="tfEmail" destination="xS5-Sr-o2r" id="9E1-An-pLA"/>
                         <outlet property="tfName" destination="ZZx-Qx-RDe" id="3kd-8S-dDW"/>
                         <outlet property="tfPassword" destination="ig9-tV-Czn" id="4jf-L2-sdl"/>
                         <outlet property="tfRePassword" destination="dc2-yN-cIP" id="D60-WN-X5H"/>
+                        <segue destination="KTf-8B-JqI" kind="show" identifier="registerToHome" id="MgX-x4-Le6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8m-ae-Iio" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1601" y="-599"/>
+            <point key="canvasLocation" x="1977" y="-179"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Jpl-LZ-0jT">
@@ -269,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NNl-dx-fT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2348" y="-198"/>
+            <point key="canvasLocation" x="1977" y="-889"/>
         </scene>
         <!--About-->
         <scene sceneID="spQ-jc-z4w">
@@ -285,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Acx-Kl-fyH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1854" y="2016"/>
+            <point key="canvasLocation" x="2299" y="2002"/>
         </scene>
         <!--Expenses-->
         <scene sceneID="AxZ-hw-WTR">
@@ -302,7 +311,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Hk-7Y-Fb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1977" y="1195"/>
+            <point key="canvasLocation" x="2299" y="1205"/>
         </scene>
         <!--Home-->
         <scene sceneID="zNg-Vk-rPn">
@@ -408,7 +417,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OcF-dz-yr0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1853.6231884057972" y="499.55357142857139"/>
+            <point key="canvasLocation" x="2299" y="528"/>
         </scene>
         <!--Custom Tab Bar View Controller-->
         <scene sceneID="6PI-4i-10t">
@@ -428,7 +437,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xb-6v-Onm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="835" y="856"/>
+            <point key="canvasLocation" x="872" y="854"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="n61-qD-M4L">
@@ -450,6 +459,9 @@
             <point key="canvasLocation" x="-214.49275362318843" y="48.883928571428569"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MgX-x4-Le6"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="bi4" width="800" height="600"/>
         <image name="btextscan" width="600" height="411"/>

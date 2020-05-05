@@ -23,6 +23,7 @@
 		BABDA282245068E5002BC251 /* BillCatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA281245068E5002BC251 /* BillCatCollectionViewCell.swift */; };
 		BABDA284245198DA002BC251 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BABDA283245198DA002BC251 /* GoogleService-Info.plist */; };
 		BABDA2862451A8B5002BC251 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA2852451A8B5002BC251 /* Constants.swift */; };
+		BABDA28D2461B7C6002BC251 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA28C2461B7C6002BC251 /* User.swift */; };
 		C31C1FE92953F355551EA6F9 /* Pods_SmartBillManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9680067DFB15034A250E11A /* Pods_SmartBillManager.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		BABDA281245068E5002BC251 /* BillCatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCatCollectionViewCell.swift; sourceTree = "<group>"; };
 		BABDA283245198DA002BC251 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BABDA2852451A8B5002BC251 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BABDA28C2461B7C6002BC251 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BDB886932BC6D6C269CAB165 /* Pods-SmartBillManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBillManager.release.xcconfig"; path = "Target Support Files/Pods-SmartBillManager/Pods-SmartBillManager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 		BABDA257244ED7B4002BC251 /* SmartBillManager */ = {
 			isa = PBXGroup;
 			children = (
+				BABDA28B2461B7B3002BC251 /* Models */,
 				BABDA258244ED7B4002BC251 /* AppDelegate.swift */,
 				BABDA25A244ED7B4002BC251 /* SceneDelegate.swift */,
 				BABDA270244ED810002BC251 /* Controller */,
@@ -135,6 +138,14 @@
 				BABDA281245068E5002BC251 /* BillCatCollectionViewCell.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		BABDA28B2461B7B3002BC251 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BABDA28C2461B7C6002BC251 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BABDA28D2461B7C6002BC251 /* User.swift in Sources */,
 				BABDA259244ED7B4002BC251 /* AppDelegate.swift in Sources */,
 				BABDA263244ED7B4002BC251 /* SmartBillManager.xcdatamodeld in Sources */,
 				BABDA27E24505EE0002BC251 /* ExpenseViewController.swift in Sources */,

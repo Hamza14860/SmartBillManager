@@ -8,5 +8,6 @@ target 'SmartBillManager' do
   # Pods for SmartBillManager
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Database'
 
 end
