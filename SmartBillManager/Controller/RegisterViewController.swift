@@ -43,9 +43,11 @@ class RegisterViewController: UIViewController {
                     
                     else {
                         //Save Profile Info To DB
+                        let userID = Auth.auth().currentUser!.uid
+
                         let user = User(Email: email, Name: name, ProfileUrl: "NoneChosen")
                         
-                        self.ref = Database.database().reference().child("Users").childByAutoId()
+                        self.ref = Database.database().reference().child("Users").child(userID)
 
                         self.ref.setValue(user.toDictionary(), withCompletionBlock: { err, ref in
                             if let error = err {
