@@ -51,8 +51,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         if let billCatCell = cell as? BillCatCollectionViewCell {
             //billCatCell.billCatImage.image = billCategories[indexPath.item]
             billCatCell.billCatImage.image = Array(billCategories)[indexPath.item].value
+            billCatCell.billCatName.text = Array(billCategories)[indexPath.item].key
+
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     }
     
     

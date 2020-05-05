@@ -10,5 +10,6 @@ import UIKit
 
 class BillCatCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var billCatName: UILabel!
     @IBOutlet weak var billCatImage: UIImageView!
 }
