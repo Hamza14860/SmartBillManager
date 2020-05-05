@@ -22,4 +22,12 @@ class User{
     func toDictionary() -> Any {
         return ["Email":Email, "Name":Name, "ProfileUrl": ProfileUrl] as Any
     }
+    
+    func getName()->String{
+        return self.Name
+    }
+    func getEmail()->String{
+        return self.Email
+    }
+   
 }
