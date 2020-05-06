@@ -98,8 +98,33 @@ class HomeViewController: UIViewController {
 
         })
     }
-
-
+    @IBAction func infoBillManPressed(_ sender: UIButton) {
+        let title: String = "What is Bill Management?"
+        let infoMsg: String = "Bill Management allows you to scan/add and store your utility bills in a categorized manner.\n You can view your past bills, update its content, see the stats relating to those bills and also share the bill content."
+        displayInfo(title: title, message: infoMsg)
+    }
+    
+    
+    @IBAction func infoOcrPressed(_ sender: UIButton) {
+        let title: String = "What is Bill Text Scanner?"
+        let infoMsg: String = "Using the Bill Text Scanner you will be able to scan bill images by capturing/uploading the image.\n Our AI based server extracts important bill text out of the image and stores it for you so that you dont have to it yourself."
+        displayInfo(title: title, message: infoMsg)
+    }
+    
+    @IBAction func infoExpManPressed(_ sender: UIButton) {
+        let title: String = "What is Expense Management?"
+        let infoMsg: String = "The expense manager allows you to efficently keep track of your expenses.\n You can add your expense items , view the total amount spent each month and also filter them by date."
+        displayInfo(title: title, message: infoMsg)
+    }
+    
+    func displayInfo( title: String, message: String) {
+        let alert = UIAlertController(title:  title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Okay.", style: .default) { (action) in
+        }
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+    
 }
 
 //MARK:- Collection View Methods

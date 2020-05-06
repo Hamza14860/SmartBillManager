@@ -375,6 +375,9 @@
                                 <rect key="frame" x="374" y="577" width="20" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="info.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="infoExpManPressed:" destination="7MI-6B-reJ" eventType="touchUpInside" id="p8E-OD-QRy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibN-Lj-CIp" userLabel="btnExpMan">
                                 <rect key="frame" x="20" y="629" width="374" height="160"/>
@@ -386,6 +389,9 @@
                                 <rect key="frame" x="374" y="325" width="20" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="info.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="infoOcrPressed:" destination="7MI-6B-reJ" eventType="touchUpInside" id="VLF-a2-89J"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlU-H5-jce" userLabel="btnTextScan">
                                 <rect key="frame" x="20" y="362" width="374" height="177"/>
@@ -458,6 +464,9 @@
                                 <rect key="frame" x="373" y="112" width="20" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="info.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="infoBillManPressed:" destination="7MI-6B-reJ" eventType="touchUpInside" id="hOm-9m-BRX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
