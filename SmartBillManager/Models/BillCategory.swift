@@ -7,19 +7,22 @@
 //
 
 import Foundation
+import UIKit
 
 class BillCategory{
     var catName: String
     var catUrl: String
     var userID: String
+    var catImage: UIImage
     
-    init(catName: String, catUrl: String, userID: String) {
+    init(catName: String, catUrl: String, userID: String, catImage: UIImage) {
         self.catName = catName
         self.catUrl = catUrl
         self.userID = userID
+        self.catImage = catImage
     }
     
-    func toDictionary() -> Any {
-           return ["catName":catName, "catUrl":catUrl, "userID": userID] as Any
-    }
+//    func toDictionary() -> Any {
+//           return ["catName":catName, "catUrl":catUrl, "userID": userID] as Any
+//    }
 }

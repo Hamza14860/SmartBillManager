@@ -12,10 +12,12 @@ import Firebase
 class HomeViewController: UIViewController {
 
     var catRef: DatabaseReference!
+    let storage = Storage.storage()
 
-//    var billCategories: [String:UIImage?] = ["PTCL":UIImage(named: "ptcl"),
-//                                             "SUIGAS":UIImage(named: "suigas"),
-//                                             "ISECO":UIImage(named: "iesco2")]
+
+    var billCategories: [String:UIImage?] = ["PTCL":UIImage(named: "ptcl"),
+                                             "SUIGAS":UIImage(named: "suigas"),
+                                             "ISECO":UIImage(named: "iesco2")]
     
     var billCategoriess = [BillCategory]()
 
@@ -33,6 +35,7 @@ class HomeViewController: UIViewController {
         
         
         catRef = Database.database().reference().child("Categories")
+
         
         loadCategories()
         
@@ -55,7 +58,6 @@ class HomeViewController: UIViewController {
             
             self.billCategoriess = [] //empty out Categories array
 
-            var newTableData: [BillCategory] = []
             print("Category Count: \(snapshot.childrenCount) ...")
             
             for category in snapshot.children {
@@ -66,18 +68,34 @@ class HomeViewController: UIViewController {
                 let catName = catDict["catName"] as! String
                 let catUrl = catDict["catUrl"] as! String
                 let userID = catDict["userID"] as! String
+                
+                var tempImg = UIImage()
 
-                let newCategory = BillCategory(catName: catName, catUrl: catUrl, userID: userID)
+                //Dowload Image from Storage
+                var httpsReference = self.storage.reference(forURL: catUrl)
+                httpsReference.getData(maxSize: 1 * 1024 * 1024) { data, error in
+                  if let error = error {
+                    print("Image Not Downloaded: \(error)")
+                  } else {
+                    tempImg = UIImage(data: data!)!
+                    print("image downloaded \(tempImg)")
+                    
+                    let newCategory = BillCategory(catName: catName, catUrl: catUrl, userID: userID, catImage: tempImg)
+                    print(newCategory.catName)
+                    self.billCategoriess.append(newCategory)
+                    
+                    //Update Collection View
+                    DispatchQueue.main.async { //Fetch main thread to update data
+                        self.billCatCollectionView.reloadData()
+                    }
 
-                newTableData.append(newCategory)
+                  }
+                }
+                
+               
             }
 
-            self.billCategoriess = newTableData
-            
 
-            DispatchQueue.main.async { //Fetch main thread to update data
-                self.billCatCollectionView.reloadData()
-            }
         })
     }
 
@@ -98,6 +116,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 //            billCatCell.billCatName.text = Array(billCategories)[indexPath.item].key
             
             billCatCell.billCatName.text = billCategoriess[indexPath.item].catName
+            billCatCell.billCatImage.image = billCategoriess[indexPath.item].catImage
 
         }
         return cell
