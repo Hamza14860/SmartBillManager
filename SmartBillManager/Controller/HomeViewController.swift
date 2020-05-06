@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
 
-    var billCategories: [String:UIImage?] = ["PTCL":UIImage(named: "ptcl"),
-                                             "SUIGAS":UIImage(named: "suigas"),
-                                             "ISECO":UIImage(named: "iesco2")]
+    var catRef: DatabaseReference!
+
+//    var billCategories: [String:UIImage?] = ["PTCL":UIImage(named: "ptcl"),
+//                                             "SUIGAS":UIImage(named: "suigas"),
+//                                             "ISECO":UIImage(named: "iesco2")]
     
+    var billCategoriess = [BillCategory]()
+
+
     @IBOutlet weak var billCatCollectionView: UICollectionView! {
         didSet {
             billCatCollectionView.dataSource = self
@@ -25,7 +31,13 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         super.tabBarController?.title = "HOME"
         
+        
+        catRef = Database.database().reference().child("Categories")
+        
+        loadCategories()
+        
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
            super.viewWillAppear(animated)
@@ -35,6 +47,39 @@ class HomeViewController: UIViewController {
        override func viewWillDisappear(_ animated: Bool) {
            super.viewWillDisappear(animated)
        }
+    
+    
+    func loadCategories(){
+        // Listen for new categories in the Firebase database
+        catRef.observe(.value, with: { snapshot in
+            
+            self.billCategoriess = [] //empty out Categories array
+
+            var newTableData: [BillCategory] = []
+            print("Category Count: \(snapshot.childrenCount) ...")
+            
+            for category in snapshot.children {
+             
+                
+                let snap = category as! DataSnapshot
+                let catDict = snap.value as! [String: Any]
+                let catName = catDict["catName"] as! String
+                let catUrl = catDict["catUrl"] as! String
+                let userID = catDict["userID"] as! String
+
+                let newCategory = BillCategory(catName: catName, catUrl: catUrl, userID: userID)
+
+                newTableData.append(newCategory)
+            }
+
+            self.billCategoriess = newTableData
+            
+
+            DispatchQueue.main.async { //Fetch main thread to update data
+                self.billCatCollectionView.reloadData()
+            }
+        })
+    }
 
 
 }
@@ -43,15 +88,16 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return billCategories.count
+        return billCategoriess.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "billCatCell", for: indexPath)
         if let billCatCell = cell as? BillCatCollectionViewCell {
-            //billCatCell.billCatImage.image = billCategories[indexPath.item]
-            billCatCell.billCatImage.image = Array(billCategories)[indexPath.item].value
-            billCatCell.billCatName.text = Array(billCategories)[indexPath.item].key
+//            billCatCell.billCatImage.image = Array(billCategories)[indexPath.item].value
+//            billCatCell.billCatName.text = Array(billCategories)[indexPath.item].key
+            
+            billCatCell.billCatName.text = billCategoriess[indexPath.item].catName
 
         }
         return cell

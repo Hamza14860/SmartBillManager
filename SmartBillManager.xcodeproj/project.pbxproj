@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BA1BDCC824622E2400823A53 /* BillsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1BDCC724622E2400823A53 /* BillsTableViewController.swift */; };
 		BA1BDCCA246232A400823A53 /* BillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1BDCC9246232A400823A53 /* BillTableViewCell.swift */; };
+		BA1BDCCC2462E09800823A53 /* BillCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1BDCCB2462E09800823A53 /* BillCategory.swift */; };
 		BABDA259244ED7B4002BC251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA258244ED7B4002BC251 /* AppDelegate.swift */; };
 		BABDA25B244ED7B4002BC251 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA25A244ED7B4002BC251 /* SceneDelegate.swift */; };
 		BABDA260244ED7B4002BC251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABDA25E244ED7B4002BC251 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		A9680067DFB15034A250E11A /* Pods_SmartBillManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartBillManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1BDCC724622E2400823A53 /* BillsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillsTableViewController.swift; sourceTree = "<group>"; };
 		BA1BDCC9246232A400823A53 /* BillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillTableViewCell.swift; sourceTree = "<group>"; };
+		BA1BDCCB2462E09800823A53 /* BillCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCategory.swift; sourceTree = "<group>"; };
 		BABDA255244ED7B4002BC251 /* SmartBillManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBillManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABDA258244ED7B4002BC251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABDA25A244ED7B4002BC251 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				BABDA28C2461B7C6002BC251 /* User.swift */,
+				BA1BDCCB2462E09800823A53 /* BillCategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				BABDA2722450018C002BC251 /* LoginViewController.swift in Sources */,
 				BABDA28024505EEF002BC251 /* AboutViewController.swift in Sources */,
 				BABDA25B244ED7B4002BC251 /* SceneDelegate.swift in Sources */,
+				BA1BDCCC2462E09800823A53 /* BillCategory.swift in Sources */,
 				BABDA2862451A8B5002BC251 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
