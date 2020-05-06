@@ -448,7 +448,6 @@
                                         <connections>
                                             <outlet property="billCatImage" destination="ohO-cW-Jk4" id="bXH-zs-VmQ"/>
                                             <outlet property="billCatName" destination="s8Z-Vi-Tfr" id="gRc-Bh-Lgn"/>
-                                            <segue destination="HrQ-iS-8G1" kind="show" id="7hR-iY-DmW"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -475,6 +474,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="WH0-ZE-71c"/>
                     <connections>
                         <outlet property="billCatCollectionView" destination="sSJ-c8-Y8o" id="bX2-N1-MPw"/>
+                        <segue destination="HrQ-iS-8G1" kind="show" identifier="catToBills" id="CM0-wE-hvd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OcF-dz-yr0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

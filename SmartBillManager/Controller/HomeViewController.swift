@@ -15,10 +15,10 @@ class HomeViewController: UIViewController {
     let storage = Storage.storage()
 
 
-    var billCategories: [String:UIImage?] = ["PTCL":UIImage(named: "ptcl"),
-                                             "SUIGAS":UIImage(named: "suigas"),
-                                             "ISECO":UIImage(named: "iesco2")]
-    
+//    var billCategories: [String:UIImage?] = ["PTCL":UIImage(named: "ptcl"),
+//                                             "SUIGAS":UIImage(named: "suigas"),
+//                                             "ISECO":UIImage(named: "iesco2")]
+//
     var billCategoriess = [BillCategory]()
 
 
@@ -137,9 +137,6 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "billCatCell", for: indexPath)
         if let billCatCell = cell as? BillCatCollectionViewCell {
-//            billCatCell.billCatImage.image = Array(billCategories)[indexPath.item].value
-//            billCatCell.billCatName.text = Array(billCategories)[indexPath.item].key
-            
             billCatCell.billCatName.text = billCategoriess[indexPath.item].catName
             billCatCell.billCatImage.image = billCategoriess[indexPath.item].catImage
 
@@ -147,7 +144,16 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! BillsTableViewController
+           
+        if let indexPath = billCatCollectionView.indexPathsForSelectedItems {
+            destinationVC.selectedCategory = billCategoriess[indexPath.first!.item]
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "catToBills", sender: self)
     }
     
     
