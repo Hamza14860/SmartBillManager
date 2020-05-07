@@ -575,7 +575,7 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="5ow-de-ET1" firstAttribute="leading" secondItem="jJ1-J4-MhD" secondAttribute="trailing" constant="8" id="ghU-vu-KpC"/>
+                                                <constraint firstItem="5ow-de-ET1" firstAttribute="leading" relation="lessThanOrEqual" secondItem="jJ1-J4-MhD" secondAttribute="trailing" constant="8" id="ghU-vu-KpC"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>

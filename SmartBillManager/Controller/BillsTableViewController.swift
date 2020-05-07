@@ -17,10 +17,12 @@ class BillsTableViewController: UITableViewController {
     var bills = [Bill]()
     
     var selectedCategory: BillCategory? {
-           didSet{
-               //loadBills()
-           }
-       }
+        didSet{
+            let userID = Auth.auth().currentUser?.uid
+            billRef = Database.database().reference().child("bills").child(userID!)
+            loadBills()
+        }
+    }
     
    
     override func viewDidLoad() {
