@@ -45,7 +45,7 @@ class RegisterViewController: UIViewController {
                         //Save Profile Info To DB
                         let userID = Auth.auth().currentUser!.uid
 
-                        let user = User(Email: email, Name: name, ProfileUrl: "NoneChosen")
+                        let user = User(Email: email, Name: name, ProfileUrl: "None Chosen")
                         
                         self.ref = Database.database().reference().child("Users").child(userID)
 

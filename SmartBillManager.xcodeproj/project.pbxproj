@@ -10,6 +10,8 @@
 		BA1BDCC824622E2400823A53 /* BillsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1BDCC724622E2400823A53 /* BillsTableViewController.swift */; };
 		BA1BDCCA246232A400823A53 /* BillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1BDCC9246232A400823A53 /* BillTableViewCell.swift */; };
 		BA1BDCCC2462E09800823A53 /* BillCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1BDCCB2462E09800823A53 /* BillCategory.swift */; };
+		BA1BDCCE246451A600823A53 /* AddBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1BDCCD246451A600823A53 /* AddBillViewController.swift */; };
+		BA1BDCD02464521200823A53 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1BDCCF2464521200823A53 /* Bill.swift */; };
 		BABDA259244ED7B4002BC251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA258244ED7B4002BC251 /* AppDelegate.swift */; };
 		BABDA25B244ED7B4002BC251 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA25A244ED7B4002BC251 /* SceneDelegate.swift */; };
 		BABDA260244ED7B4002BC251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABDA25E244ED7B4002BC251 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 		BA1BDCC724622E2400823A53 /* BillsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillsTableViewController.swift; sourceTree = "<group>"; };
 		BA1BDCC9246232A400823A53 /* BillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillTableViewCell.swift; sourceTree = "<group>"; };
 		BA1BDCCB2462E09800823A53 /* BillCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCategory.swift; sourceTree = "<group>"; };
+		BA1BDCCD246451A600823A53 /* AddBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillViewController.swift; sourceTree = "<group>"; };
+		BA1BDCCF2464521200823A53 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		BABDA255244ED7B4002BC251 /* SmartBillManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBillManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABDA258244ED7B4002BC251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABDA25A244ED7B4002BC251 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 				BABDA281245068E5002BC251 /* BillCatCollectionViewCell.swift */,
 				BA1BDCC724622E2400823A53 /* BillsTableViewController.swift */,
 				BA1BDCC9246232A400823A53 /* BillTableViewCell.swift */,
+				BA1BDCCD246451A600823A53 /* AddBillViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 			children = (
 				BABDA28C2461B7C6002BC251 /* User.swift */,
 				BA1BDCCB2462E09800823A53 /* BillCategory.swift */,
+				BA1BDCCF2464521200823A53 /* Bill.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -277,6 +283,7 @@
 				BABDA259244ED7B4002BC251 /* AppDelegate.swift in Sources */,
 				BA1BDCC824622E2400823A53 /* BillsTableViewController.swift in Sources */,
 				BABDA263244ED7B4002BC251 /* SmartBillManager.xcdatamodeld in Sources */,
+				BA1BDCCE246451A600823A53 /* AddBillViewController.swift in Sources */,
 				BA1BDCCA246232A400823A53 /* BillTableViewCell.swift in Sources */,
 				BABDA27E24505EE0002BC251 /* ExpenseViewController.swift in Sources */,
 				BABDA274245001A0002BC251 /* RegisterViewController.swift in Sources */,
@@ -288,6 +295,7 @@
 				BABDA28024505EEF002BC251 /* AboutViewController.swift in Sources */,
 				BABDA25B244ED7B4002BC251 /* SceneDelegate.swift in Sources */,
 				BA1BDCCC2462E09800823A53 /* BillCategory.swift in Sources */,
+				BA1BDCD02464521200823A53 /* Bill.swift in Sources */,
 				BABDA2862451A8B5002BC251 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
