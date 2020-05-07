@@ -40,8 +40,8 @@ class BillsTableViewController: UITableViewController {
         billRef = Database.database().reference().child("bills").child(userID!)
         
         //TBD
-        bills.append(Bill(billAddNote: "-", billAmount: "2930", billCategory: "PTCL", billCustomerName: "Lorem Irepsum", billDate: "09/06/2020", billImageUrl: "-", billText: ["-":"-"], billImage: UIImage(named: "bi3")!))
-        bills.append(Bill(billAddNote: "-", billAmount: "2930", billCategory: "IESCO", billCustomerName: "Lorem Irepsum", billDate: "09/06/2020", billImageUrl: "-", billText: ["-":"-"], billImage: UIImage(named: "bi3")!))
+        //bills.append(Bill(billAddNote: "-", billAmount: "2930", billCategory: "PTCL", billCustomerName: "Lorem Irepsum", billDate: "09/06/2020", billImageUrl: "-", billText: ["-":"-"], billImage: UIImage(named: "bi3")!))
+        //bills.append(Bill(billAddNote: "-", billAmount: "2930", billCategory: "IESCO", billCustomerName: "Lorem Irepsum", billDate: "09/06/2020", billImageUrl: "-", billText: ["-":"-"], billImage: UIImage(named: "bi3")!))
         
     }
     
@@ -64,7 +64,7 @@ class BillsTableViewController: UITableViewController {
                 let billAddNote = billDict["billAddNote"] as! String
                 
 
-                if billImageUrl != "None Chosen" {
+                if self.selectedCategory?.catName == billCategory && billImageUrl != "None Chosen" {
                     var tempImg = UIImage()
 
                     //Dowload Image from Storage
@@ -92,8 +92,8 @@ class BillsTableViewController: UITableViewController {
                     }
                 }
                 
-                else{
-                    let tempImg = UIImage(named: "bi3")!
+                else if self.selectedCategory?.catName == billCategory && billImageUrl == "None Chosen"{
+                    let tempImg = UIImage(named: "bill1")!
                     print("image loaded \(tempImg)")
                                   
                     //TODO:- BILL TEXT TO BE UPDATED
@@ -135,6 +135,11 @@ class BillsTableViewController: UITableViewController {
         cell.ivBillImage.image = bill.billImage
         
         return cell
+    }
+    
+    //To limit row height of table view
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 140
     }
     
 

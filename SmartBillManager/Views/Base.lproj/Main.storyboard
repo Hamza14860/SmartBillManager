@@ -581,7 +581,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="jJ1-J4-MhD" secondAttribute="bottom" constant="12" id="KOo-rF-pK7"/>
-                                        <constraint firstItem="jJ1-J4-MhD" firstAttribute="leading" secondItem="74U-c4-dty" secondAttribute="leading" constant="20" id="lUx-rK-32W"/>
+                                        <constraint firstItem="jJ1-J4-MhD" firstAttribute="leading" secondItem="5ow-de-ET1" secondAttribute="leading" constant="-105" id="lUx-rK-32W"/>
                                         <constraint firstItem="jJ1-J4-MhD" firstAttribute="top" secondItem="74U-c4-dty" secondAttribute="top" constant="11" id="pTZ-su-HKK"/>
                                         <constraint firstAttribute="trailing" secondItem="5ow-de-ET1" secondAttribute="trailing" constant="49" id="uSz-gv-m33"/>
                                     </constraints>
