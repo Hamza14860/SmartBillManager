@@ -144,12 +144,19 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return cell
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVC = segue.destination as! BillsTableViewController
-           
-        if let indexPath = billCatCollectionView.indexPathsForSelectedItems {
-            destinationVC.selectedCategory = billCategoriess[indexPath.first!.item]
+        if segue.identifier == "catToBills" {
+            let destinationVC = segue.destination as! BillsTableViewController
+               
+            if let indexPath = billCatCollectionView.indexPathsForSelectedItems {
+                destinationVC.selectedCategory = billCategoriess[indexPath.first!.item]
+            }
         }
+        else {
+            let destinationVC = segue.destination as! AddBillViewController
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
