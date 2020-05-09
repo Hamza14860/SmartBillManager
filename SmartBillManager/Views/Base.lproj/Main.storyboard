@@ -623,14 +623,60 @@
                     <view key="view" contentMode="scaleToFill" id="Sr7-To-nok">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kKl-mL-SUe">
+                                <rect key="frame" x="20" y="137" width="373" height="465"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="BrandLightBlue"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xq8-lv-Y8Z">
+                                <rect key="frame" x="208" y="600" width="185" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="BrandBlue"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <state key="normal" title="Capture">
+                                    <color key="titleColor" name="BrandLightBlue"/>
+                                </state>
+                                <connections>
+                                    <action selector="captureImagePressed:" destination="fPM-D0-vDE" eventType="touchUpInside" id="wjl-r9-7sO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pU7-0x-WPI">
+                                <rect key="frame" x="20" y="599" width="185" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="BrandBlue"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <state key="normal" title="Upload">
+                                    <color key="titleColor" name="BrandLightBlue"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadImagePressed:" destination="fPM-D0-vDE" eventType="touchUpInside" id="w7h-hH-EG6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F66-bu-6uG">
+                                <rect key="frame" x="0.0" y="719" width="414" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Scan Image">
+                                    <color key="titleColor" name="BrandLightBlue"/>
+                                </state>
+                                <connections>
+                                    <action selector="scanImagePressed:" destination="fPM-D0-vDE" eventType="touchUpInside" id="7Y7-pR-ajC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6zC-wT-wN0"/>
                     </view>
                     <navigationItem key="navigationItem" id="oHp-gL-WEG"/>
+                    <connections>
+                        <outlet property="ivBillImage" destination="kKl-mL-SUe" id="HW3-oX-7Mp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsQ-6c-5eS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4452" y="-263"/>
+            <point key="canvasLocation" x="4450.7246376811599" y="-263.16964285714283"/>
         </scene>
         <!--Custom Tab Bar View Controller-->
         <scene sceneID="6PI-4i-10t">

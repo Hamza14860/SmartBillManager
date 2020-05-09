@@ -12,11 +12,22 @@ class AddBillViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Bill Text Scanner"
 
-        // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var ivBillImage: UIImageView!
+    
+    
+    @IBAction func uploadImagePressed(_ sender: UIButton) {
+    }
+    
+    @IBAction func captureImagePressed(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func scanImagePressed(_ sender: UIButton) {
+    }
     /*
     // MARK: - Navigation
 
