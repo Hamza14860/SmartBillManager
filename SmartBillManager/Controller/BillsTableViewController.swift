@@ -188,11 +188,22 @@ class BillsTableViewController: UITableViewController {
     }
     */
     
-
+    
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "billToBillDetail" {
+               let destinationVC = segue.destination as! BillDetailsViewController
+                  
+               if let indexPath = tableView.indexPathForSelectedRow {
+                destinationVC.selectedBill = bills[indexPath.row]
+               }
+           }
+           
+           
+       }
     
     //MARK: - Table View Delegate Methods
        override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+            performSegue(withIdentifier: "billToBillDetail", sender: self)
        }
 
 }

@@ -13,11 +13,16 @@ class AddBillViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Bill Text Scanner"
-
+    
     }
     
+   
+    
+    @IBOutlet weak var lblScanProgress: UILabel!
     @IBOutlet weak var ivBillImage: UIImageView!
     
+    @IBAction func infoOcrPressed(_ sender: UIBarButtonItem) {
+    }
     
     @IBAction func uploadImagePressed(_ sender: UIButton) {
     }
