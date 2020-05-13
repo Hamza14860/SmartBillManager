@@ -16,7 +16,6 @@
 		BAB7F7B1246C510A0083A0CF /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7F7B0246C510A0083A0CF /* CustomPageViewController.swift */; };
 		BAB7F7B3246C514C0083A0CF /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7F7B2246C514C0083A0CF /* DataViewController.swift */; };
 		BAB7F7B5246C6F290083A0CF /* BillImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7F7B4246C6F290083A0CF /* BillImageViewController.swift */; };
-		BAB7F7B7246C8D750083A0CF /* ExportBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7F7B6246C8D750083A0CF /* ExportBillViewController.swift */; };
 		BABDA259244ED7B4002BC251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA258244ED7B4002BC251 /* AppDelegate.swift */; };
 		BABDA25B244ED7B4002BC251 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA25A244ED7B4002BC251 /* SceneDelegate.swift */; };
 		BABDA260244ED7B4002BC251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABDA25E244ED7B4002BC251 /* Main.storyboard */; };
@@ -49,7 +48,6 @@
 		BAB7F7B0246C510A0083A0CF /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
 		BAB7F7B2246C514C0083A0CF /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		BAB7F7B4246C6F290083A0CF /* BillImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillImageViewController.swift; sourceTree = "<group>"; };
-		BAB7F7B6246C8D750083A0CF /* ExportBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportBillViewController.swift; sourceTree = "<group>"; };
 		BABDA255244ED7B4002BC251 /* SmartBillManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBillManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABDA258244ED7B4002BC251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABDA25A244ED7B4002BC251 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,7 +161,6 @@
 				BAB7F7B0246C510A0083A0CF /* CustomPageViewController.swift */,
 				BAB7F7B2246C514C0083A0CF /* DataViewController.swift */,
 				BAB7F7B4246C6F290083A0CF /* BillImageViewController.swift */,
-				BAB7F7B6246C8D750083A0CF /* ExportBillViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -306,7 +303,6 @@
 				BAB7F7B1246C510A0083A0CF /* CustomPageViewController.swift in Sources */,
 				BABDA27C24503F5E002BC251 /* HomeViewController.swift in Sources */,
 				BABDA282245068E5002BC251 /* BillCatCollectionViewCell.swift in Sources */,
-				BAB7F7B7246C8D750083A0CF /* ExportBillViewController.swift in Sources */,
 				BABDA2782450024F002BC251 /* ForgetPassScreenViewController.swift in Sources */,
 				BABDA27A24503ED8002BC251 /* CustomTabBarViewController.swift in Sources */,
 				BABDA2722450018C002BC251 /* LoginViewController.swift in Sources */,

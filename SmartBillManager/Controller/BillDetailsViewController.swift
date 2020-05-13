@@ -18,7 +18,7 @@ class BillDetailsViewController: UIViewController {
     
     @IBOutlet weak var contentView: UIView!
     
-    let dataSource = ["Bill Text","Bill Image", "Export Bill"]
+    let dataSource = ["Bill Text","Bill Image"]
     
     var currentViewControllerIndex = 0
     
@@ -61,7 +61,7 @@ class BillDetailsViewController: UIViewController {
             return
         }
         
-        pageViewController.setViewControllers([startingViewController], direction: .forward, animated: true)
+        pageViewController.setViewControllers([startingViewController], direction: .forward, animated: true, completion: nil)
     }
     
     
@@ -100,22 +100,6 @@ class BillDetailsViewController: UIViewController {
         return billImageViewController
     }
     
-    func detailExportBillViewControllerAt(index: Int) -> ExportBillViewController? {
-        
-        if index >= dataSource.count || dataSource.count == 0 {
-            return nil
-        }
-        
-        guard let billExportaViewController = storyboard?.instantiateViewController(withIdentifier: String(describing: ExportBillViewController.self)) as? ExportBillViewController else {
-            return nil
-        }
-        
-        billExportaViewController.index = index
-        billExportaViewController.displayText = dataSource[index]
-        //billExportaViewController.displayText = selectedBill?.billCustomerName
-
-        return billExportaViewController
-    }
 
     /*
     // MARK: - Navigation
@@ -159,14 +143,11 @@ extension BillDetailsViewController: UIPageViewControllerDelegate, UIPageViewCon
         if currentViewControllerIndex == 0 {
             return nil
         }
-        currentViewControllerIndex -= 1
 
         if currentViewControllerIndex == 1 {
             return detailViewControllerAt(index: currentViewControllerIndex)
         }
-        else if currentViewControllerIndex == 2 {
-            return detailImageViewControllerAt(index: currentViewControllerIndex)
-        }
+        currentViewControllerIndex -= 1
         
         return nil
     }
@@ -210,10 +191,7 @@ extension BillDetailsViewController: UIPageViewControllerDelegate, UIPageViewCon
 
         print(currentViewControllerIndex)
 
-        if currentViewControllerIndex == 2 {
-            return detailExportBillViewControllerAt(index: currentViewControllerIndex)
-        }
-        else if currentViewControllerIndex == 1 {
+        if currentViewControllerIndex == 1 {
             return detailImageViewControllerAt(index: currentViewControllerIndex)
         }
         
