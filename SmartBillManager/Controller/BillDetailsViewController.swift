@@ -24,6 +24,7 @@ class BillDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(dataSource.count)
         configurePageViewController()
         // Do any additional setup after loading the view.
     }
@@ -63,6 +64,8 @@ class BillDetailsViewController: UIViewController {
         pageViewController.setViewControllers([startingViewController], direction: .forward, animated: true)
     }
     
+    
+    
     func detailViewControllerAt(index: Int) -> DataViewController? {
         
         if index >= dataSource.count || dataSource.count == 0 {
@@ -74,8 +77,8 @@ class BillDetailsViewController: UIViewController {
         }
         
         dataViewController.index = index
-       // dataViewController.displayText = dataSource[index]
-        dataViewController.displayText = selectedBill?.billCustomerName
+        dataViewController.displayText = dataSource[index]
+        //dataViewController.displayText = selectedBill?.billCustomerName"
 
         return dataViewController
     }
@@ -91,10 +94,27 @@ class BillDetailsViewController: UIViewController {
         }
         
         billImageViewController.index = index
-       // dataViewController.displayText = dataSource[index]
-        billImageViewController.displayText = selectedBill?.billCustomerName
+        billImageViewController.displayText = dataSource[index]
+        //billImageViewController.displayText = selectedBill?.billCustomerName
 
         return billImageViewController
+    }
+    
+    func detailExportBillViewControllerAt(index: Int) -> ExportBillViewController? {
+        
+        if index >= dataSource.count || dataSource.count == 0 {
+            return nil
+        }
+        
+        guard let billExportaViewController = storyboard?.instantiateViewController(withIdentifier: String(describing: ExportBillViewController.self)) as? ExportBillViewController else {
+            return nil
+        }
+        
+        billExportaViewController.index = index
+        billExportaViewController.displayText = dataSource[index]
+        //billExportaViewController.displayText = selectedBill?.billCustomerName
+
+        return billExportaViewController
     }
 
     /*
@@ -120,22 +140,38 @@ extension BillDetailsViewController: UIPageViewControllerDelegate, UIPageViewCon
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        let dataViewController = viewController as? DataViewController
+//        let dataViewController = viewController as? DataViewController
+//
+//        guard var currentIndex = dataViewController?.index else {
+//            return nil
+//        }
+//
+//        currentViewControllerIndex = currentIndex
+//
+//        if currentIndex == 0 {
+//            return nil
+//        }
+//
+//        currentIndex -= 1
+//
+//        return detailViewControllerAt(index: currentIndex)
         
-        guard var currentIndex = dataViewController?.index else {
+        if currentViewControllerIndex == 0 {
             return nil
         }
-        
-        currentViewControllerIndex = currentIndex
-        
-        if currentIndex == 0 {
-            return nil
+        currentViewControllerIndex -= 1
+
+        if currentViewControllerIndex == 1 {
+            return detailViewControllerAt(index: currentViewControllerIndex)
+        }
+        else if currentViewControllerIndex == 2 {
+            return detailImageViewControllerAt(index: currentViewControllerIndex)
         }
         
-        currentIndex -= 1
-        
-        return detailViewControllerAt(index: currentIndex)
+        return nil
     }
+    
+    
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
 //
@@ -153,19 +189,36 @@ extension BillDetailsViewController: UIPageViewControllerDelegate, UIPageViewCon
         
         
         
-        let dataViewController = viewController as? BillImageViewController
-        guard var currentIndex = dataViewController?.index else {
-            print("Here")
-            return nil
-        }
-        if currentIndex == dataSource.count {
-            print("Here2")
-            return nil
-        }
-        currentIndex += 1
-        currentViewControllerIndex = currentIndex
+//        let dataViewController = viewController as? BillImageViewController
+//        guard var currentIndex = dataViewController?.index else {
+//            print("Here")
+//            return nil
+//        }
+//        if currentIndex == dataSource.count {
+//            print("Here2")
+//            return nil
+//        }
+//        currentIndex += 1
+//        currentViewControllerIndex = currentIndex
+//
+//        return detailImageViewControllerAt(index: currentIndex)
                
-        return detailImageViewControllerAt(index: currentIndex)
+        if currentViewControllerIndex == dataSource.count {
+            return nil
+        }
+        currentViewControllerIndex += 1
+
+        print(currentViewControllerIndex)
+
+        if currentViewControllerIndex == 2 {
+            return detailExportBillViewControllerAt(index: currentViewControllerIndex)
+        }
+        else if currentViewControllerIndex == 1 {
+            return detailImageViewControllerAt(index: currentViewControllerIndex)
+        }
+        
+                
+        return nil
     }
     
     
