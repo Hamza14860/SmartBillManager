@@ -54,6 +54,7 @@ class BillsTableViewController: UITableViewController {
                
             for bill in snapshot.children {
                 let snap = bill as! DataSnapshot
+                
                 let billDict = snap.value as! [String: Any]
                 let billAmount = billDict["billAmount"] as! String
                 let billCategory = billDict["billCategory"] as! String
@@ -62,7 +63,8 @@ class BillsTableViewController: UITableViewController {
                 let billImageUrl = billDict["billImageUrl"] as! String
 
                 let billAddNote = billDict["billAddNote"] as! String
-                
+                let billId = snap.key
+
 
                 if self.selectedCategory?.catName == billCategory && billImageUrl != "None Chosen" {
                     var tempImg = UIImage()
@@ -77,7 +79,7 @@ class BillsTableViewController: UITableViewController {
                             print("image downloaded \(tempImg)")
                                           
                             //TODO:- BILL TEXT TO BE UPDATED
-                            let newBill = Bill(billAddNote: billAddNote, billAmount: billAmount, billCategory: billCategory, billCustomerName: billCustomerName, billDate: billDate, billImageUrl: billImageUrl, billText: ["-":"-"],billImage: tempImg)
+                            let newBill = Bill(billAddNote: billAddNote, billAmount: billAmount, billCategory: billCategory, billCustomerName: billCustomerName, billDate: billDate, billImageUrl: billImageUrl, billText: ["-":"-"],billImage: tempImg, billId: billId)
                                            
                             print(newBill.billCustomerName)
                                           
@@ -97,7 +99,7 @@ class BillsTableViewController: UITableViewController {
                     print("image loaded \(tempImg)")
                                   
                     //TODO:- BILL TEXT TO BE UPDATED
-                    let newBill = Bill(billAddNote: billAddNote, billAmount: billAmount, billCategory: billCategory, billCustomerName: billCustomerName, billDate: billDate, billImageUrl: billImageUrl, billText: ["-":"-"],billImage: tempImg)
+                    let newBill = Bill(billAddNote: billAddNote, billAmount: billAmount, billCategory: billCategory, billCustomerName: billCustomerName, billDate: billDate, billImageUrl: billImageUrl, billText: ["-":"-"],billImage: tempImg, billId: billId)
                                    
                     print(newBill.billCustomerName)
                                   

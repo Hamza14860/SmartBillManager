@@ -20,9 +20,11 @@ class Bill {
     var billText: [String:String]
     
     var billImage: UIImage
+    
+    var billId: String
 
     
-    init(billAddNote:String,billAmount:String,billCategory:String,billCustomerName:String,billDate:String,billImageUrl:String, billText:[String:String], billImage: UIImage) {
+    init(billAddNote:String,billAmount:String,billCategory:String,billCustomerName:String,billDate:String,billImageUrl:String, billText:[String:String], billImage: UIImage, billId: String) {
         self.billAddNote = billAddNote
         self.billAmount = billAmount
         self.billDate = billDate
@@ -32,5 +34,7 @@ class Bill {
         self.billCustomerName = billCustomerName
         
         self.billImage = billImage
+        
+        self.billId = billId
     }
 }

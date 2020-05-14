@@ -947,7 +947,9 @@
                         <outlet property="billMeterNo" destination="xAo-Xq-lR9" id="3Pc-kn-Yuz"/>
                         <outlet property="billNote" destination="n8i-4w-1N3" id="ByY-9r-Ed3"/>
                         <outlet property="billPhone" destination="qvB-lK-wWV" id="fib-tz-rcW"/>
+                        <outlet property="billTitle" destination="7J4-ea-rOT" id="8oa-n6-yLE"/>
                         <outlet property="billUnits" destination="YMY-hM-Msy" id="rr9-J8-qh8"/>
+                        <outlet property="btnUpdate" destination="uKg-Y4-Y5q" id="jtn-Rd-aIA"/>
                         <outlet property="displayLabel" destination="xem-Fe-0hb" id="BYg-W5-fLd"/>
                         <outlet property="viewPhoneNo" destination="seN-XL-kI9" id="oGv-bk-tUk"/>
                         <outlet property="viewUnitsMeterNo" destination="QOL-41-hXC" id="DTv-GG-Bzf"/>

@@ -9,6 +9,11 @@
 import UIKit
 
 class BillImageViewController: UIViewController {
+    
+    var selectedBill: Bill? {
+        didSet{
+        }
+    }
     @IBOutlet weak var displayLabel: UILabel!
     
     var index: Int?

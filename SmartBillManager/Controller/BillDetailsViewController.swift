@@ -79,6 +79,7 @@ class BillDetailsViewController: UIViewController {
         
         dataViewController.index = index
         dataViewController.displayText = dataSource[index]
+        dataViewController.selectedBill = selectedBill
         //dataViewController.displayText = selectedBill?.billCustomerName"
 
         
@@ -98,6 +99,7 @@ class BillDetailsViewController: UIViewController {
         
         billImageViewController.index = index
         billImageViewController.displayText = dataSource[index]
+        billImageViewController.selectedBill = selectedBill
         //billImageViewController.displayText = selectedBill?.billCustomerName
 
       
