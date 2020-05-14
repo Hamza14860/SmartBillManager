@@ -53,6 +53,19 @@ class BillTextViewController: UIViewController {
         else {
             btnUpdate.isEnabled = false
         }
+        
+        if selectedBill?.billCategory == "PTCL" {
+            viewUnitsMeterNo.alpha = 0.4
+            billUnits.isEnabled = false
+            billMeterNo.isEnabled = false
+            billUnits.backgroundColor = UIColor.lightGray
+            billMeterNo.backgroundColor = UIColor.lightGray
+        }
+        else {
+            viewPhoneNo.alpha = 0.4
+            billPhone.isEnabled = false
+            billPhone.backgroundColor = UIColor.lightGray
+        }
 
     }
     
