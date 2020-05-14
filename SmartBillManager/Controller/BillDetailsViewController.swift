@@ -11,7 +11,6 @@ import UIKit
 class BillDetailsViewController: UIViewController {
     var selectedBill: Bill? {
            didSet{
-               
            }
        }
     
@@ -24,9 +23,11 @@ class BillDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(dataSource.count)
+        //print(dataSource.count)
         configurePageViewController()
-        // Do any additional setup after loading the view.
+        
+        self.title = "Bill Details"
+
     }
     
     func configurePageViewController(){
@@ -80,6 +81,8 @@ class BillDetailsViewController: UIViewController {
         dataViewController.displayText = dataSource[index]
         //dataViewController.displayText = selectedBill?.billCustomerName"
 
+        
+      
         return dataViewController
     }
     
@@ -97,6 +100,8 @@ class BillDetailsViewController: UIViewController {
         billImageViewController.displayText = dataSource[index]
         //billImageViewController.displayText = selectedBill?.billCustomerName
 
+      
+        
         return billImageViewController
     }
     
@@ -168,21 +173,6 @@ extension BillDetailsViewController: UIPageViewControllerDelegate, UIPageViewCon
 //
 //        return detailViewControllerAt(index: currentIndex)
         
-        
-        
-//        let dataViewController = viewController as? BillImageViewController
-//        guard var currentIndex = dataViewController?.index else {
-//            print("Here")
-//            return nil
-//        }
-//        if currentIndex == dataSource.count {
-//            print("Here2")
-//            return nil
-//        }
-//        currentIndex += 1
-//        currentViewControllerIndex = currentIndex
-//
-//        return detailImageViewControllerAt(index: currentIndex)
                
         if currentViewControllerIndex == dataSource.count {
             return nil
