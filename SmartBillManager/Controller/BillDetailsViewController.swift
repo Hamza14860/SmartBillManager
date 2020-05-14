@@ -67,13 +67,13 @@ class BillDetailsViewController: UIViewController {
     
     
     
-    func detailViewControllerAt(index: Int) -> DataViewController? {
+    func detailViewControllerAt(index: Int) -> BillTextViewController? {
         
         if index >= dataSource.count || dataSource.count == 0 {
             return nil
         }
         
-        guard let dataViewController = storyboard?.instantiateViewController(withIdentifier: String(describing: DataViewController.self)) as? DataViewController else {
+        guard let dataViewController = storyboard?.instantiateViewController(withIdentifier: String(describing: BillTextViewController.self)) as? BillTextViewController else {
             return nil
         }
         

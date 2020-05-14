@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DataViewController: UIViewController {
+class BillTextViewController: UIViewController {
 
    var index: Int?
     

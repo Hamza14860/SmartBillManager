@@ -14,7 +14,7 @@
 		BA1BDCD02464521200823A53 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1BDCCF2464521200823A53 /* Bill.swift */; };
 		BAB7F7AF246C50580083A0CF /* BillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7F7AE246C50580083A0CF /* BillDetailsViewController.swift */; };
 		BAB7F7B1246C510A0083A0CF /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7F7B0246C510A0083A0CF /* CustomPageViewController.swift */; };
-		BAB7F7B3246C514C0083A0CF /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7F7B2246C514C0083A0CF /* DataViewController.swift */; };
+		BAB7F7B3246C514C0083A0CF /* BillTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7F7B2246C514C0083A0CF /* BillTextViewController.swift */; };
 		BAB7F7B5246C6F290083A0CF /* BillImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7F7B4246C6F290083A0CF /* BillImageViewController.swift */; };
 		BABDA259244ED7B4002BC251 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA258244ED7B4002BC251 /* AppDelegate.swift */; };
 		BABDA25B244ED7B4002BC251 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA25A244ED7B4002BC251 /* SceneDelegate.swift */; };
@@ -46,7 +46,7 @@
 		BA1BDCCF2464521200823A53 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		BAB7F7AE246C50580083A0CF /* BillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsViewController.swift; sourceTree = "<group>"; };
 		BAB7F7B0246C510A0083A0CF /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
-		BAB7F7B2246C514C0083A0CF /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		BAB7F7B2246C514C0083A0CF /* BillTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillTextViewController.swift; sourceTree = "<group>"; };
 		BAB7F7B4246C6F290083A0CF /* BillImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillImageViewController.swift; sourceTree = "<group>"; };
 		BABDA255244ED7B4002BC251 /* SmartBillManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBillManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABDA258244ED7B4002BC251 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 				BA1BDCCD246451A600823A53 /* AddBillViewController.swift */,
 				BAB7F7AE246C50580083A0CF /* BillDetailsViewController.swift */,
 				BAB7F7B0246C510A0083A0CF /* CustomPageViewController.swift */,
-				BAB7F7B2246C514C0083A0CF /* DataViewController.swift */,
+				BAB7F7B2246C514C0083A0CF /* BillTextViewController.swift */,
 				BAB7F7B4246C6F290083A0CF /* BillImageViewController.swift */,
 			);
 			path = Controller;
@@ -292,7 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BABDA28D2461B7C6002BC251 /* User.swift in Sources */,
-				BAB7F7B3246C514C0083A0CF /* DataViewController.swift in Sources */,
+				BAB7F7B3246C514C0083A0CF /* BillTextViewController.swift in Sources */,
 				BABDA259244ED7B4002BC251 /* AppDelegate.swift in Sources */,
 				BA1BDCC824622E2400823A53 /* BillsTableViewController.swift in Sources */,
 				BABDA263244ED7B4002BC251 /* SmartBillManager.xcdatamodeld in Sources */,

@@ -653,10 +653,10 @@
             </objects>
             <point key="canvasLocation" x="5150.7246376811599" y="537.05357142857144"/>
         </scene>
-        <!--Data View Controller-->
+        <!--Bill Text View Controller-->
         <scene sceneID="7Zt-XO-9am">
             <objects>
-                <viewController storyboardIdentifier="DataViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jL2-hF-0eA" customClass="DataViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BillTextViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jL2-hF-0eA" customClass="BillTextViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Upg-83-KW5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
