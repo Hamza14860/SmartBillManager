@@ -33,6 +33,9 @@
 		BABDA284245198DA002BC251 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BABDA283245198DA002BC251 /* GoogleService-Info.plist */; };
 		BABDA2862451A8B5002BC251 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA2852451A8B5002BC251 /* Constants.swift */; };
 		BABDA28D2461B7C6002BC251 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDA28C2461B7C6002BC251 /* User.swift */; };
+		BAF4BE1E246F92FE00368566 /* BillManagementStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF4BE1D246F92FE00368566 /* BillManagementStoryboard.storyboard */; };
+		BAF4BE20246F931D00368566 /* ExpenseManagementStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF4BE1F246F931D00368566 /* ExpenseManagementStoryboard.storyboard */; };
+		BAF4BE22246F933B00368566 /* AboutStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF4BE21246F933B00368566 /* AboutStoryboard.storyboard */; };
 		C31C1FE92953F355551EA6F9 /* Pods_SmartBillManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9680067DFB15034A250E11A /* Pods_SmartBillManager.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +70,9 @@
 		BABDA283245198DA002BC251 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BABDA2852451A8B5002BC251 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BABDA28C2461B7C6002BC251 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BAF4BE1D246F92FE00368566 /* BillManagementStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BillManagementStoryboard.storyboard; sourceTree = "<group>"; };
+		BAF4BE1F246F931D00368566 /* ExpenseManagementStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExpenseManagementStoryboard.storyboard; sourceTree = "<group>"; };
+		BAF4BE21246F933B00368566 /* AboutStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutStoryboard.storyboard; sourceTree = "<group>"; };
 		BDB886932BC6D6C269CAB165 /* Pods-SmartBillManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBillManager.release.xcconfig"; path = "Target Support Files/Pods-SmartBillManager/Pods-SmartBillManager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +144,9 @@
 		BABDA26F244ED807002BC251 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BAF4BE21246F933B00368566 /* AboutStoryboard.storyboard */,
+				BAF4BE1F246F931D00368566 /* ExpenseManagementStoryboard.storyboard */,
+				BAF4BE1D246F92FE00368566 /* BillManagementStoryboard.storyboard */,
 				BABDA25E244ED7B4002BC251 /* Main.storyboard */,
 			);
 			path = Views;
@@ -235,8 +244,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF4BE20246F931D00368566 /* ExpenseManagementStoryboard.storyboard in Resources */,
 				BABDA268244ED7B8002BC251 /* LaunchScreen.storyboard in Resources */,
 				BABDA284245198DA002BC251 /* GoogleService-Info.plist in Resources */,
+				BAF4BE1E246F92FE00368566 /* BillManagementStoryboard.storyboard in Resources */,
+				BAF4BE22246F933B00368566 /* AboutStoryboard.storyboard in Resources */,
 				BABDA265244ED7B8002BC251 /* Assets.xcassets in Resources */,
 				BABDA260244ED7B4002BC251 /* Main.storyboard in Resources */,
 			);

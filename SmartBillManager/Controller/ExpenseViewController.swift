@@ -12,6 +12,7 @@ class ExpenseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.tabBarController?.title = "EXPENSES"
 
         // Do any additional setup after loading the view.
     }

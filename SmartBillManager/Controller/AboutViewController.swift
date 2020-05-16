@@ -19,6 +19,8 @@ class AboutViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        super.tabBarController?.title = "ABOUT"
+
         ref = Database.database().reference()
 
         let userID = Auth.auth().currentUser?.uid
