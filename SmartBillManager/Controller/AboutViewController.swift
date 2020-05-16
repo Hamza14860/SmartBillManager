@@ -40,6 +40,12 @@ class AboutViewController: UIViewController {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        super.tabBarController?.title = "ABOUT"
+
+    }
+    
     
     @IBAction func logoutPressed(_ sender: UIButton) {
         do {
