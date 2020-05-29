@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0AAA2F62481443A00AB8D2B /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAA2F52481443A00AB8D2B /* Expense.swift */; };
+		A0AAA2F82481448D00AB8D2B /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAA2F72481448D00AB8D2B /* AddExpenseViewController.swift */; };
+		A0AAA2FA248147F500AB8D2B /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAA2F9248147F500AB8D2B /* ExpenseTableViewCell.swift */; };
 		BA1BDCC824622E2400823A53 /* BillsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1BDCC724622E2400823A53 /* BillsTableViewController.swift */; };
 		BA1BDCCA246232A400823A53 /* BillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1BDCC9246232A400823A53 /* BillTableViewCell.swift */; };
 		BA1BDCCC2462E09800823A53 /* BillCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1BDCCB2462E09800823A53 /* BillCategory.swift */; };
@@ -41,6 +44,9 @@
 
 /* Begin PBXFileReference section */
 		32E7B2CDAFC18BAB4D9481CD /* Pods-SmartBillManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartBillManager.debug.xcconfig"; path = "Target Support Files/Pods-SmartBillManager/Pods-SmartBillManager.debug.xcconfig"; sourceTree = "<group>"; };
+		A0AAA2F52481443A00AB8D2B /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		A0AAA2F72481448D00AB8D2B /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
+		A0AAA2F9248147F500AB8D2B /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
 		A9680067DFB15034A250E11A /* Pods_SmartBillManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartBillManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1BDCC724622E2400823A53 /* BillsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillsTableViewController.swift; sourceTree = "<group>"; };
 		BA1BDCC9246232A400823A53 /* BillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillTableViewCell.swift; sourceTree = "<group>"; };
@@ -155,12 +161,13 @@
 		BABDA270244ED810002BC251 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BABDA27D24505EE0002BC251 /* ExpenseViewController.swift */,
+				A0AAA2F72481448D00AB8D2B /* AddExpenseViewController.swift */,
 				BABDA2712450018C002BC251 /* LoginViewController.swift */,
 				BABDA273245001A0002BC251 /* RegisterViewController.swift */,
 				BABDA2772450024F002BC251 /* ForgetPassScreenViewController.swift */,
 				BABDA27924503ED8002BC251 /* CustomTabBarViewController.swift */,
 				BABDA27B24503F5E002BC251 /* HomeViewController.swift */,
-				BABDA27D24505EE0002BC251 /* ExpenseViewController.swift */,
 				BABDA27F24505EEF002BC251 /* AboutViewController.swift */,
 				BABDA281245068E5002BC251 /* BillCatCollectionViewCell.swift */,
 				BA1BDCC724622E2400823A53 /* BillsTableViewController.swift */,
@@ -170,6 +177,7 @@
 				BAB7F7B0246C510A0083A0CF /* CustomPageViewController.swift */,
 				BAB7F7B2246C514C0083A0CF /* BillTextViewController.swift */,
 				BAB7F7B4246C6F290083A0CF /* BillImageViewController.swift */,
+				A0AAA2F9248147F500AB8D2B /* ExpenseTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,6 +188,7 @@
 				BABDA28C2461B7C6002BC251 /* User.swift */,
 				BA1BDCCB2462E09800823A53 /* BillCategory.swift */,
 				BA1BDCCF2464521200823A53 /* Bill.swift */,
+				A0AAA2F52481443A00AB8D2B /* Expense.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -303,7 +312,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0AAA2FA248147F500AB8D2B /* ExpenseTableViewCell.swift in Sources */,
 				BABDA28D2461B7C6002BC251 /* User.swift in Sources */,
+				A0AAA2F82481448D00AB8D2B /* AddExpenseViewController.swift in Sources */,
 				BAB7F7B3246C514C0083A0CF /* BillTextViewController.swift in Sources */,
 				BABDA259244ED7B4002BC251 /* AppDelegate.swift in Sources */,
 				BA1BDCC824622E2400823A53 /* BillsTableViewController.swift in Sources */,
@@ -322,6 +333,7 @@
 				BAB7F7AF246C50580083A0CF /* BillDetailsViewController.swift in Sources */,
 				BABDA25B244ED7B4002BC251 /* SceneDelegate.swift in Sources */,
 				BA1BDCCC2462E09800823A53 /* BillCategory.swift in Sources */,
+				A0AAA2F62481443A00AB8D2B /* Expense.swift in Sources */,
 				BAB7F7B5246C6F290083A0CF /* BillImageViewController.swift in Sources */,
 				BA1BDCD02464521200823A53 /* Bill.swift in Sources */,
 				BABDA2862451A8B5002BC251 /* Constants.swift in Sources */,

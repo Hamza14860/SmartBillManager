@@ -8,7 +8,8 @@
 
 import UIKit
 import Firebase
-
+import FirebaseDatabase
+import FirebaseAuth
 class BillsTableViewController: UITableViewController {
     
     var billRef: DatabaseReference!

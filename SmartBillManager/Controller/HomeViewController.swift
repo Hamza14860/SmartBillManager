@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-
+import FirebaseDatabase
 class HomeViewController: UIViewController {
 
     var catRef: DatabaseReference!
@@ -159,10 +159,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 destinationVC.selectedCategory = billCategoriess[indexPath.first!.item]
             }
         }
-        else {
+        else if segue.identifier == "catToOcr"{
             let destinationVC = segue.destination as! AddBillViewController
         }
-        
+        else{
+            let destinationVC = segue.destination as! ExpenseViewController
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

@@ -8,7 +8,8 @@
 
 import UIKit
 import Firebase
-
+import FirebaseAuth
+import FirebaseDatabase
 class AboutViewController: UIViewController {
     @IBOutlet weak var ivProfilePic: UIImageView!
     
