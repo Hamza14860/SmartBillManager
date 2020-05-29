@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class ExpenseViewController: UIViewController {
 
     override func viewDidLoad() {
