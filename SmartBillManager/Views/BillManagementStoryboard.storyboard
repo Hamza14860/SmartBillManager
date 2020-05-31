@@ -646,6 +646,9 @@
                                 <state key="normal" title="Share">
                                     <color key="titleColor" name="BrandLightBlue"/>
                                 </state>
+                                <connections>
+                                    <action selector="sharePressed:" destination="VCH-hQ-TZj" eventType="touchUpInside" id="6qS-fY-SpA"/>
+                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HNc-US-YNM">
                                 <rect key="frame" x="20" y="98" width="374" height="581"/>
