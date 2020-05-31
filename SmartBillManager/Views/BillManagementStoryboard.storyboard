@@ -300,7 +300,11 @@
                         <viewLayoutGuide key="safeArea" id="olW-hi-OAL"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mgv-RI-lDx">
-                        <barButtonItem key="rightBarButtonItem" title="Export" id="gDw-nZ-baW"/>
+                        <barButtonItem key="rightBarButtonItem" title="Export" id="gDw-nZ-baW">
+                            <connections>
+                                <action selector="exportTextPressed:" destination="Mt7-hW-ODd" id="ash-xE-FQd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="contentView" destination="HJ7-CW-FMG" id="kTL-qf-K1l"/>

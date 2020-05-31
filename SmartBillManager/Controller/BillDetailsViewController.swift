@@ -30,6 +30,29 @@ class BillDetailsViewController: UIViewController {
 
     }
     
+    @IBAction func exportTextPressed(_ sender: UIBarButtonItem) {
+        // text to share
+        var text = "."
+        if let catB = selectedBill?.billCategory, let amountB = selectedBill?.billAmount, let dateB = selectedBill?.billDate, let cnameB = selectedBill?.billCustomerName {
+            text = " Category: " + catB + "\n Customer Name: " + cnameB + "\n Date: "
+                   text += dateB + "\n Amount: " + amountB
+        }
+        else {
+            text = "NAN"
+        }
+       
+
+               // set up activity view controller
+               let textToShare = [ text ]
+               let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+               activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
+
+               // exclude some activity types from the list (optional)
+        activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
+
+               // present the view controller
+               self.present(activityViewController, animated: true, completion: nil)
+    }
     func configurePageViewController(){
         
         guard let pageViewController = storyboard?.instantiateViewController(identifier: String(describing: CustomPageViewController.self)) as? CustomPageViewController else {
@@ -108,15 +131,7 @@ class BillDetailsViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
 
