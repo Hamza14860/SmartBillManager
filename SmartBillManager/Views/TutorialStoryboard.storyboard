@@ -58,8 +58,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mih-mB-1r3">
-                                <rect key="frame" x="20" y="119" width="374" height="23"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <rect key="frame" x="20" y="119" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -67,7 +67,7 @@
                                 <rect key="frame" x="0.0" y="511" width="414" height="340"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpW-5o-g6u">
-                                <rect key="frame" x="20" y="150" width="374" height="283"/>
+                                <rect key="frame" x="20" y="153.5" width="374" height="279.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -79,7 +79,7 @@
                             <constraint firstItem="QS1-Nf-nLQ" firstAttribute="leading" secondItem="KGF-Te-mnV" secondAttribute="leading" id="Kwu-QX-yGy"/>
                             <constraint firstItem="KGF-Te-mnV" firstAttribute="trailing" secondItem="QS1-Nf-nLQ" secondAttribute="trailing" id="T38-uy-VAI"/>
                             <constraint firstItem="KGF-Te-mnV" firstAttribute="trailing" secondItem="HpW-5o-g6u" secondAttribute="trailing" constant="20" id="UZZ-aW-fpq"/>
-                            <constraint firstItem="Mih-mB-1r3" firstAttribute="top" relation="lessThanOrEqual" secondItem="KGF-Te-mnV" secondAttribute="top" constant="75" id="Van-Xq-P7h"/>
+                            <constraint firstItem="Mih-mB-1r3" firstAttribute="top" secondItem="KGF-Te-mnV" secondAttribute="top" constant="75" id="Van-Xq-P7h"/>
                             <constraint firstItem="KGF-Te-mnV" firstAttribute="trailing" secondItem="Mih-mB-1r3" secondAttribute="trailing" constant="20" id="a5d-Tk-8B6"/>
                             <constraint firstItem="QS1-Nf-nLQ" firstAttribute="top" relation="lessThanOrEqual" secondItem="HpW-5o-g6u" secondAttribute="bottom" constant="78" id="lvO-sI-aCj"/>
                             <constraint firstItem="HpW-5o-g6u" firstAttribute="leading" secondItem="KGF-Te-mnV" secondAttribute="leading" constant="20" id="pQJ-A7-acX"/>

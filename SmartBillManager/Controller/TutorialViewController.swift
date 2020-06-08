@@ -11,7 +11,7 @@ import UIKit
 class TutorialViewController: UIViewController {
 
     
-    let dataSource: [TutorialModel] = [TutorialModel(t: "Tired of Storing Bills?", m: "- Do you store your bills at home?\n\n- Or do you have to manually save bill data on your computer?\n\n- Do you have difficulty in managing expenses?\n\n THEN SWIPE RIGHT", i: 1),
+    let dataSource: [TutorialModel] = [TutorialModel(t: "Tired of Storing Bills?", m: "- Do you secure your bills at home?\n\n- Do you have to manually store bill data on your computer?\n\n- Do you have difficulty in managing expenses?\n\n THEN SWIPE RIGHT", i: 1),
                                        TutorialModel(t: "Meet Smart Bill Manager", m: "- Automatic scanning of bill images.\n\n- Extract and store bill text.\n\n- Update and analyze bills.", i: 2),
                                        TutorialModel(t: "Track Expenses", m: "- Use our intuitive expense manager to manage your day to day expenses.\n\n-  Daily/Monthly/Yearly Filter Available.\n\n- Total Expense Amount Displayed.\n\n- Expenses dividied into categories", i: 3)]
     
