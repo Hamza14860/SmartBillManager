@@ -255,6 +255,9 @@
                                 <state key="normal" title="Send">
                                     <color key="titleColor" name="BrandLightBlue"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnResetPressed:" destination="AaO-k4-CLg" eventType="touchUpInside" id="jpa-Es-kqM"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ql-Hb-qyE">
                                 <rect key="frame" x="57" y="246" width="301" height="36"/>
@@ -274,10 +277,13 @@
                         <viewLayoutGuide key="safeArea" id="wOc-9a-sOh"/>
                     </view>
                     <navigationItem key="navigationItem" id="szy-UR-fT5"/>
+                    <connections>
+                        <outlet property="emailToReset" destination="1Ql-Hb-qyE" id="12U-bj-2nR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NNl-dx-fT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1977" y="-889"/>
+            <point key="canvasLocation" x="1976.8115942028987" y="-889.28571428571422"/>
         </scene>
         <!--BillManagementStoryboard-->
         <scene sceneID="gFn-t6-Xhf">
