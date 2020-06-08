@@ -295,10 +295,10 @@
             </objects>
             <point key="canvasLocation" x="1902" y="698"/>
         </scene>
-        <!--ExpenseManagementStoryboard-->
+        <!--TutorialStoryboard-->
         <scene sceneID="WxN-aU-fYd">
             <objects>
-                <viewControllerPlaceholder storyboardName="ExpenseManagementStoryboard" id="Ibm-Hg-ACL" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="TutorialStoryboard" id="Ibm-Hg-ACL" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="feh-Zh-B12"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAp-gF-TR0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

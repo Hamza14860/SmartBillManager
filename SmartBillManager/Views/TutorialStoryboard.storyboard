@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DWy-hF-swa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tutorial-->
+        <scene sceneID="PNG-Xb-9or">
+            <objects>
+                <viewController id="DWy-hF-swa" customClass="TutorialViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qxz-eq-NB6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10k-GB-wxj">
+                                <rect key="frame" x="20" y="88" width="374" height="720"/>
+                                <color key="backgroundColor" name="BrandLightBlue"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="BrandBlue"/>
+                        <constraints>
+                            <constraint firstItem="10k-GB-wxj" firstAttribute="leading" secondItem="Qxz-eq-NB6" secondAttribute="leadingMargin" id="7Xb-Zz-r5g"/>
+                            <constraint firstItem="10k-GB-wxj" firstAttribute="centerY" secondItem="Qxz-eq-NB6" secondAttribute="centerY" id="e2C-aA-bVJ"/>
+                            <constraint firstItem="10k-GB-wxj" firstAttribute="trailing" secondItem="Qxz-eq-NB6" secondAttribute="trailingMargin" id="eWM-9R-KbS"/>
+                            <constraint firstItem="10k-GB-wxj" firstAttribute="top" secondItem="TlS-yb-3Py" secondAttribute="top" constant="44" id="fYz-ah-eXM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TlS-yb-3Py"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tutorial" image="questionmark.square.fill" catalog="system" id="kvB-ha-mcT"/>
+                    <navigationItem key="navigationItem" id="N9m-7k-L47"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="contentView" destination="10k-GB-wxj" id="cGo-yo-EDn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yTy-4C-jmG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2298.5507246376815" y="1204.6875"/>
+        </scene>
+        <!--Tutorial Page View Controller-->
+        <scene sceneID="NRi-UE-zeO">
+            <objects>
+                <pageViewController storyboardIdentifier="TutorialPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="2bj-Wf-FkI" customClass="TutorialPageViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4bz-BP-Fc7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3877" y="1185"/>
+        </scene>
+        <!--Page Data View Controller-->
+        <scene sceneID="ayL-eJ-kyr">
+            <objects>
+                <viewController storyboardIdentifier="PageDataViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lqD-L2-90r" customClass="PageDataViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RbE-vD-p2b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QS1-Nf-nLQ">
+                                <rect key="frame" x="55" y="247" width="311" height="310"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mih-mB-1r3">
+                                <rect key="frame" x="55" y="204" width="311" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="BrandLightBlue"/>
+                        <constraints>
+                            <constraint firstItem="Mih-mB-1r3" firstAttribute="top" secondItem="KGF-Te-mnV" secondAttribute="top" constant="160" id="0Wc-Ti-CiZ"/>
+                            <constraint firstItem="KGF-Te-mnV" firstAttribute="trailing" secondItem="Mih-mB-1r3" secondAttribute="trailing" constant="48" id="O5f-RL-clj"/>
+                            <constraint firstItem="QS1-Nf-nLQ" firstAttribute="leading" secondItem="KGF-Te-mnV" secondAttribute="leading" constant="55" id="aIf-Ri-maH"/>
+                            <constraint firstItem="Mih-mB-1r3" firstAttribute="leading" secondItem="KGF-Te-mnV" secondAttribute="leading" constant="55" id="hYZ-W3-Jmn"/>
+                            <constraint firstItem="QS1-Nf-nLQ" firstAttribute="top" secondItem="Mih-mB-1r3" secondAttribute="bottom" constant="22.5" id="mEj-js-Ygk"/>
+                            <constraint firstItem="KGF-Te-mnV" firstAttribute="bottom" secondItem="QS1-Nf-nLQ" secondAttribute="bottom" constant="305" id="oOs-1w-4Sb"/>
+                            <constraint firstItem="KGF-Te-mnV" firstAttribute="trailing" secondItem="QS1-Nf-nLQ" secondAttribute="trailing" constant="48" id="srq-Ms-BX2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KGF-Te-mnV"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageTitle" destination="Mih-mB-1r3" id="Jsh-Qy-crd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UTI-GP-nHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3111.594202898551" y="1195.9821428571429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="questionmark.square.fill" catalog="system" width="128" height="114"/>
+        <namedColor name="BrandBlue">
+            <color red="0.16500000655651093" green="0.77999997138977051" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrandLightBlue">
+            <color red="0.92199999094009399" green="0.98000001907348633" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
