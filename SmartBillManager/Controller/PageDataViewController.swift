@@ -11,25 +11,33 @@ import UIKit
 class PageDataViewController: UIViewController {
 
     var displayText: String?
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        pageTitle.text = displayText
-        // Do any additional setup after loading the view.
-    }
-    
+    var mess: String?
+  
     var index: Int?
+    var imageNo: Int?
 
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var message: UILabel!
     
     @IBOutlet weak var pageTitle: UILabel!
     
-    /*
-    // MARK: - Navigation
+   
+    override func viewDidLoad() {
+          super.viewDidLoad()
+        pageTitle.text = displayText
+        message.text = mess
+        if imageNo == 1 {
+            image.image = UIImage(named: "tutimg")
+        }
+        else if imageNo == 2 {
+            image.image = UIImage(named: "billscanimg")
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        }
+        else {
+            image.image = UIImage(named: "expimg")
+
+        }
+      }
+      
 
 }

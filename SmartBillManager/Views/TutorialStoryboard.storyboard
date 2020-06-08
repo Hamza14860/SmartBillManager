@@ -57,29 +57,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QS1-Nf-nLQ">
-                                <rect key="frame" x="55" y="247" width="311" height="310"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mih-mB-1r3">
-                                <rect key="frame" x="55" y="204" width="311" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="20" y="119" width="374" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="tutimg" translatesAutoresizingMaskIntoConstraints="NO" id="QS1-Nf-nLQ">
+                                <rect key="frame" x="0.0" y="511" width="414" height="340"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpW-5o-g6u">
+                                <rect key="frame" x="20" y="150" width="374" height="283"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" name="BrandLightBlue"/>
                         <constraints>
-                            <constraint firstItem="Mih-mB-1r3" firstAttribute="top" secondItem="KGF-Te-mnV" secondAttribute="top" constant="160" id="0Wc-Ti-CiZ"/>
-                            <constraint firstItem="KGF-Te-mnV" firstAttribute="trailing" secondItem="Mih-mB-1r3" secondAttribute="trailing" constant="48" id="O5f-RL-clj"/>
-                            <constraint firstItem="QS1-Nf-nLQ" firstAttribute="leading" secondItem="KGF-Te-mnV" secondAttribute="leading" constant="55" id="aIf-Ri-maH"/>
-                            <constraint firstItem="Mih-mB-1r3" firstAttribute="leading" secondItem="KGF-Te-mnV" secondAttribute="leading" constant="55" id="hYZ-W3-Jmn"/>
-                            <constraint firstItem="QS1-Nf-nLQ" firstAttribute="top" secondItem="Mih-mB-1r3" secondAttribute="bottom" constant="22.5" id="mEj-js-Ygk"/>
-                            <constraint firstItem="KGF-Te-mnV" firstAttribute="bottom" secondItem="QS1-Nf-nLQ" secondAttribute="bottom" constant="305" id="oOs-1w-4Sb"/>
-                            <constraint firstItem="KGF-Te-mnV" firstAttribute="trailing" secondItem="QS1-Nf-nLQ" secondAttribute="trailing" constant="48" id="srq-Ms-BX2"/>
+                            <constraint firstItem="HpW-5o-g6u" firstAttribute="top" secondItem="Mih-mB-1r3" secondAttribute="bottom" constant="8" id="DQs-Ze-gw1"/>
+                            <constraint firstItem="QS1-Nf-nLQ" firstAttribute="leading" secondItem="KGF-Te-mnV" secondAttribute="leading" id="Kwu-QX-yGy"/>
+                            <constraint firstItem="KGF-Te-mnV" firstAttribute="trailing" secondItem="QS1-Nf-nLQ" secondAttribute="trailing" id="T38-uy-VAI"/>
+                            <constraint firstItem="KGF-Te-mnV" firstAttribute="trailing" secondItem="HpW-5o-g6u" secondAttribute="trailing" constant="20" id="UZZ-aW-fpq"/>
+                            <constraint firstItem="Mih-mB-1r3" firstAttribute="top" relation="lessThanOrEqual" secondItem="KGF-Te-mnV" secondAttribute="top" constant="75" id="Van-Xq-P7h"/>
+                            <constraint firstItem="KGF-Te-mnV" firstAttribute="trailing" secondItem="Mih-mB-1r3" secondAttribute="trailing" constant="20" id="a5d-Tk-8B6"/>
+                            <constraint firstItem="QS1-Nf-nLQ" firstAttribute="top" relation="lessThanOrEqual" secondItem="HpW-5o-g6u" secondAttribute="bottom" constant="78" id="lvO-sI-aCj"/>
+                            <constraint firstItem="HpW-5o-g6u" firstAttribute="leading" secondItem="KGF-Te-mnV" secondAttribute="leading" constant="20" id="pQJ-A7-acX"/>
+                            <constraint firstItem="KGF-Te-mnV" firstAttribute="bottom" secondItem="QS1-Nf-nLQ" secondAttribute="bottom" constant="11" id="rtE-HX-Rxj"/>
+                            <constraint firstItem="Mih-mB-1r3" firstAttribute="leading" secondItem="KGF-Te-mnV" secondAttribute="leading" constant="20" id="w0L-fl-7N2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KGF-Te-mnV"/>
                     </view>
                     <connections>
+                        <outlet property="image" destination="QS1-Nf-nLQ" id="CYB-UN-cYV"/>
+                        <outlet property="message" destination="HpW-5o-g6u" id="fvh-1d-8h4"/>
                         <outlet property="pageTitle" destination="Mih-mB-1r3" id="Jsh-Qy-crd"/>
                     </connections>
                 </viewController>
@@ -90,6 +101,7 @@
     </scenes>
     <resources>
         <image name="questionmark.square.fill" catalog="system" width="128" height="114"/>
+        <image name="tutimg" width="389" height="340"/>
         <namedColor name="BrandBlue">
             <color red="0.16500000655651093" green="0.77999997138977051" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
