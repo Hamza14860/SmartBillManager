@@ -37,6 +37,8 @@ class BillTextViewController: UIViewController {
     
     var displayText: String?
     
+    var billTextUpdated = [String:String]()
+    
     override func viewDidLoad() {
            super.viewDidLoad()
         displayLabel.text = displayText
@@ -45,6 +47,10 @@ class BillTextViewController: UIViewController {
         billAmount.text = selectedBill?.billAmount
         billDate.text = selectedBill?.billDate
         billTitle.text = selectedBill?.billCategory
+        
+        billCustAddress.text = selectedBill?.billText["Address"]
+        
+        billTextUpdated = selectedBill?.billText as! [String : String]
         
         
         let userID = Auth.auth().currentUser?.uid
@@ -61,11 +67,16 @@ class BillTextViewController: UIViewController {
             billMeterNo.isEnabled = false
             billUnits.backgroundColor = UIColor.lightGray
             billMeterNo.backgroundColor = UIColor.lightGray
+            
+            billPhone.text = selectedBill?.billText["PhoneNumber"]
         }
         else {
             viewPhoneNo.alpha = 0.4
             billPhone.isEnabled = false
             billPhone.backgroundColor = UIColor.lightGray
+            
+            billUnits.text = selectedBill?.billText["Units"]
+            billMeterNo.text = selectedBill?.billText["Meter"]
         }
 
     }
@@ -73,11 +84,43 @@ class BillTextViewController: UIViewController {
     
     
     @IBAction func updateTextPressed(_ sender: UIButton) {
-        let billPost = ["billCustomerName": billCustName.text,
-                        "billAddNote": billNote.text,
-                        "billAmount": billAmount.text,
-        "billDate": billDate.text]
-        billRef.updateChildValues(billPost)
+        if selectedBill?.billCategory == "PTCL" {
+            billTextUpdated["PhoneNumber"] = billPhone.text
+            billTextUpdated["Address"] = billCustAddress.text
+            billTextUpdated["Amount"] = billAmount.text
+            billTextUpdated["Date"] = billDate.text
+
+
+            
+            let billPost = ["billCustomerName": billCustName.text,
+                            "billAddNote": billNote.text,
+                            "billAmount": billAmount.text,
+                            "billDate": billDate.text,
+                            "billText": billTextUpdated] as [String : Any]
+            billRef.updateChildValues(billPost)
+            
+        }
+        else {
+            billTextUpdated["Units"] = billUnits.text
+            billTextUpdated["Meter"] = billMeterNo.text
+            billTextUpdated["Address"] = billCustAddress.text
+            billTextUpdated["Amount"] = billAmount.text
+            billTextUpdated["Date"] = billDate.text
+
+            let billPost = ["billCustomerName": billCustName.text,
+                            "billAddNote": billNote.text,
+                            "billAmount": billAmount.text,
+                            "billDate": billDate.text,
+                            "billText": billTextUpdated] as [String : Any]
+            billRef.updateChildValues(billPost)
+            
+        }
+//        let billPost = ["billCustomerName": billCustName.text,
+//                        "billAddNote": billNote.text,
+//                        "billAmount": billAmount.text,
+//        "billDate": billDate.text]
+//        billRef.updateChildValues(billPost)
+        
         
         let alert = UIAlertController(title: "Bill Text Updated", message: "", preferredStyle: .alert)
 

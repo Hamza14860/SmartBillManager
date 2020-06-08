@@ -57,14 +57,17 @@ class BillsTableViewController: UITableViewController {
                 let snap = bill as! DataSnapshot
                 
                 let billDict = snap.value as! [String: Any]
-                let billAmount = billDict["billAmount"] as! String
-                let billCategory = billDict["billCategory"] as! String
-                let billCustomerName = billDict["billCustomerName"] as! String
-                let billDate = billDict["billDate"] as! String
+                let billAmount = billDict["billAmount"] as? String
+                let billCategory = billDict["billCategory"] as? String
+                let billCustomerName = billDict["billCustomerName"] as? String
+                let billDate = billDict["billDate"] as? String
                 let billImageUrl = billDict["billImageUrl"] as! String
 
-                let billAddNote = billDict["billAddNote"] as! String
+                let billAddNote = billDict["billAddNote"] as? String
                 let billId = snap.key
+                
+                let billText = billDict["billText"] as! [String:String]
+                //print (billText)
 
 
                 if self.selectedCategory?.catName == billCategory && billImageUrl != "None Chosen" {
@@ -80,7 +83,7 @@ class BillsTableViewController: UITableViewController {
                             print("image downloaded \(tempImg)")
                                           
                             //TODO:- BILL TEXT TO BE UPDATED
-                            let newBill = Bill(billAddNote: billAddNote, billAmount: billAmount, billCategory: billCategory, billCustomerName: billCustomerName, billDate: billDate, billImageUrl: billImageUrl, billText: ["-":"-"],billImage: tempImg, billId: billId)
+                            let newBill = Bill(billAddNote: billAddNote ?? "-", billAmount: billAmount ?? "0", billCategory: billCategory ?? "PTCL", billCustomerName: billCustomerName ?? "-", billDate: billDate ?? "-", billImageUrl: billImageUrl, billText: billText,billImage: tempImg, billId: billId)
                                            
                             print(newBill.billCustomerName)
                                           
@@ -100,7 +103,7 @@ class BillsTableViewController: UITableViewController {
                     print("image loaded \(tempImg)")
                                   
                     //TODO:- BILL TEXT TO BE UPDATED
-                    let newBill = Bill(billAddNote: billAddNote, billAmount: billAmount, billCategory: billCategory, billCustomerName: billCustomerName, billDate: billDate, billImageUrl: billImageUrl, billText: ["-":"-"],billImage: tempImg, billId: billId)
+                    let newBill = Bill(billAddNote: billAddNote ?? "-", billAmount: billAmount ?? "0", billCategory: billCategory ?? "PTCL", billCustomerName: billCustomerName ?? "-", billDate: billDate ?? "-", billImageUrl: billImageUrl, billText: billText,billImage: tempImg, billId: billId)
                                    
                     print(newBill.billCustomerName)
                                   

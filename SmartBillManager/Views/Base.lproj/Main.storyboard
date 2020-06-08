@@ -142,7 +142,7 @@
                                         <rect key="frame" x="-5" y="8" width="424" height="112"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hamzaazam@live.com" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qm0-Ic-G5v">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hamzaazam14@gmail.com" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qm0-Ic-G5v">
                                         <rect key="frame" x="81" y="33" width="254" height="36"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" name="BrandBlue"/>
@@ -350,7 +350,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MgX-x4-Le6"/>
+        <segue reference="EXN-OU-Kra"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bi4" width="800" height="600"/>
