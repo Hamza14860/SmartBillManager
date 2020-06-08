@@ -7,17 +7,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Expenses-->
+        <!--Tutorial-->
         <scene sceneID="PNG-Xb-9or">
             <objects>
-                <viewController id="DWy-hF-swa" customClass="ExpenseViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DWy-hF-swa" customClass="TutorialViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qxz-eq-NB6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="TlS-yb-3Py"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Expenses" image="dollarsign.circle.fill" catalog="system" id="kvB-ha-mcT"/>
+                    <tabBarItem key="tabBarItem" title="Tutorial" image="questionmark.square.fill" catalog="system" id="kvB-ha-mcT"/>
                     <navigationItem key="navigationItem" id="N9m-7k-L47"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -27,6 +27,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="questionmark.square.fill" catalog="system" width="128" height="114"/>
     </resources>
 </document>

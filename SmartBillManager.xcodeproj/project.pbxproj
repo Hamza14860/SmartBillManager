@@ -15,6 +15,7 @@
 		BA1BDCCC2462E09800823A53 /* BillCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1BDCCB2462E09800823A53 /* BillCategory.swift */; };
 		BA1BDCCE246451A600823A53 /* AddBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1BDCCD246451A600823A53 /* AddBillViewController.swift */; };
 		BA1BDCD02464521200823A53 /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1BDCCF2464521200823A53 /* Bill.swift */; };
+		BA79B41F248EB052002DB97E /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79B41E248EB052002DB97E /* TutorialViewController.swift */; };
 		BAB7F7AF246C50580083A0CF /* BillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7F7AE246C50580083A0CF /* BillDetailsViewController.swift */; };
 		BAB7F7B1246C510A0083A0CF /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7F7B0246C510A0083A0CF /* CustomPageViewController.swift */; };
 		BAB7F7B3246C514C0083A0CF /* BillTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7F7B2246C514C0083A0CF /* BillTextViewController.swift */; };
@@ -53,6 +54,7 @@
 		BA1BDCCB2462E09800823A53 /* BillCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillCategory.swift; sourceTree = "<group>"; };
 		BA1BDCCD246451A600823A53 /* AddBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillViewController.swift; sourceTree = "<group>"; };
 		BA1BDCCF2464521200823A53 /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
+		BA79B41E248EB052002DB97E /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		BAB7F7AE246C50580083A0CF /* BillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsViewController.swift; sourceTree = "<group>"; };
 		BAB7F7B0246C510A0083A0CF /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
 		BAB7F7B2246C514C0083A0CF /* BillTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillTextViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				BAB7F7B2246C514C0083A0CF /* BillTextViewController.swift */,
 				BAB7F7B4246C6F290083A0CF /* BillImageViewController.swift */,
 				A0AAA2F9248147F500AB8D2B /* ExpenseTableViewCell.swift */,
+				BA79B41E248EB052002DB97E /* TutorialViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				BAB7F7B3246C514C0083A0CF /* BillTextViewController.swift in Sources */,
 				BABDA259244ED7B4002BC251 /* AppDelegate.swift in Sources */,
 				BA1BDCC824622E2400823A53 /* BillsTableViewController.swift in Sources */,
+				BA79B41F248EB052002DB97E /* TutorialViewController.swift in Sources */,
 				BABDA263244ED7B4002BC251 /* SmartBillManager.xcdatamodeld in Sources */,
 				BA1BDCCE246451A600823A53 /* AddBillViewController.swift in Sources */,
 				BA1BDCCA246232A400823A53 /* BillTableViewCell.swift in Sources */,

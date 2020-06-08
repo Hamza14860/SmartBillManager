@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--About-->
+        <!--Profile-->
         <scene sceneID="7ei-7E-DZI">
             <objects>
                 <viewController id="RNu-Hv-x3g" customClass="AboutViewController" customModule="SmartBillManager" customModuleProvider="target" sceneMemberID="viewController">
@@ -56,7 +56,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="RAt-7g-z20"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" image="info.circle.fill" catalog="system" id="yKr-hd-JdJ"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="yKr-hd-JdJ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ivProfilePic" destination="GCC-mv-3WP" id="MLK-8J-dtE"/>
@@ -71,7 +71,7 @@
     </scenes>
     <resources>
         <image name="MeAvatar" width="36" height="36"/>
-        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <namedColor name="BrandLightBlue">
             <color red="0.92199999094009399" green="0.98000001907348633" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

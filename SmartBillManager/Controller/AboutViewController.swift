@@ -20,7 +20,7 @@ class AboutViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.tabBarController?.title = "ABOUT"
+        super.tabBarController?.title = "PROFILE"
 
         ref = Database.database().reference()
 
@@ -43,7 +43,7 @@ class AboutViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        super.tabBarController?.title = "ABOUT"
+        super.tabBarController?.title = "PROFILE"
 
     }
     
