@@ -242,6 +242,7 @@
                                         <constraint firstItem="CON-bw-zcf" firstAttribute="top" secondItem="f4E-SE-QlE" secondAttribute="top" constant="11" id="hpf-45-AzB"/>
                                         <constraint firstAttribute="bottom" secondItem="CON-bw-zcf" secondAttribute="bottom" constant="12" id="qwr-Xq-Eay"/>
                                         <constraint firstItem="CON-bw-zcf" firstAttribute="leading" secondItem="G2S-4m-g6d" secondAttribute="leading" constant="-105" id="r4V-ZQ-gfU"/>
+                                        <constraint firstItem="CON-bw-zcf" firstAttribute="leading" secondItem="f4E-SE-QlE" secondAttribute="leading" constant="20" id="zqa-if-eRo"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -980,7 +981,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iFY-5f-lfC"/>
+        <segue reference="T6P-Qi-mBf"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="btextscan" width="600" height="411"/>
