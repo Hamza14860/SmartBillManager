@@ -1,4 +1,4 @@
-#BillMan - A Smart Bill Manager (iOS App)
+# BillMan - A Smart Bill Manager (iOS App)
 
 
 Smart Bill Manager is a solution to digitize the process of traditional bill management by providing an automated solution to scan, extract, store and manage bills.
