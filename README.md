@@ -2,7 +2,8 @@
 
 
 Smart Bill Manager is a solution to digitize the process of traditional bill management by providing an automated solution to scan, extract, store and manage bills.
-This repository is the Front-End iOS Application for Smart Bill Manager. The purpose of this app is to allow users to take images of bills from their phones, send them to a remote server, and then receive relevant text information about those particular images eg. bill total, date, type of bill etc. The text along with the image is stored in this app which the users can modify and add more information into. The app also allows users to analyze past bills, view their stats and compare different bills. Morever, there is an expense management module to help users manage their daily/monthly/yearly budgets.
+This repository is the Front-End iOS Application for Smart Bill Manager. 
+The purpose of this app is to allow users to take images of bills from their phones, send them to a remote server, and then receive relevant text information about those particular images eg. bill total, date, type of bill etc. The text along with the image is stored in this app which the users can modify and add more information into. The app also allows users to analyze past bills, view their stats and compare different bills. Morever, there is an expense management module to help users manage their daily/monthly/yearly budgets.
 
 Technologies used :
 
